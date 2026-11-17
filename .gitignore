@@ -1,0 +1,13 @@
+# Raw source images (posts, posters, photos) used to cut the site assets
+assets/src/
+assets/logo-source.jpg
+
+# Local tooling
+.claude/
+node_modules/
+.DS_Store
+Thumbs.db
+
+# stray / backup files
+719427362_*.jpg
+assets/*-prev.*

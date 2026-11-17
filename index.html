@@ -1,0 +1,1149 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dar Alkahrbaa Training Center</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="theme-color" content="#171B47">
+<meta property="og:title" content="Dar Alkahrbaa Training Center — مركز دار الكهرباء للتدريب">
+<meta property="og:description" content="Hands-on training for engineers and engineering students. 15,000+ graduates. Part of Dar Alkahrbaa.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/banner.jpg">
+<meta name="description" content="Dar Alkahrbaa Training Center prepares fresh graduate engineers and final-year students for the job market. Part of Dar Alkahrbaa.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Alexandria:wght@500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">
+<style>
+/* Calm catalog: white page, light-grey alternating bands, near-black type, navy brand buttons.
+   One typeface, generous whitespace, no effects. Modeled on a quiet institute site. */
+:root{
+  --bg:#FFFFFF; --band:#F3F3F4; --surface:#FFFFFF; --ink:#0E0F1A; --ink-2:#3A3C4A; --muted:#6E7080; --soft:#9A9CA8;
+  --line:#E6E6EA; --line-2:#D4D4DA;
+  --brand:#171B47; --brand-ink:#FFFFFF; --gold:#F2B705; --wa:#1FAF55;
+  --f:'Plus Jakarta Sans','Segoe UI',Tahoma,sans-serif;
+  --fd:'Bebas Neue','Plus Jakarta Sans',Impact,sans-serif;
+  --fh:'Plus Jakarta Sans','Segoe UI',sans-serif;
+  --r:16px; --r-s:10px; --maxw:1140px;
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--f);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--bg)}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer;border:0;background:none;padding:0}
+:focus-visible{outline:2px solid var(--brand);outline-offset:3px;border-radius:6px}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:800;text-wrap:balance;font-family:var(--fh);letter-spacing:-.01em}
+h1,h2{font-family:var(--fd);font-weight:400;line-height:.98;letter-spacing:.01em}
+:root[lang="ar"]{--f:'IBM Plex Sans Arabic','Segoe UI',Tahoma,sans-serif;--fd:'Alexandria','IBM Plex Sans Arabic',sans-serif;--fh:'Alexandria','IBM Plex Sans Arabic',sans-serif}
+:root[lang="ar"] h1,:root[lang="ar"] h2{font-weight:800;line-height:1.3;letter-spacing:0}
+p{margin:0}
+img{max-width:100%;display:block}
+.num{font-variant-numeric:tabular-nums}
+.wrap{width:100%;max-width:var(--maxw);margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.sec{padding-block:clamp(56px,8vw,96px)}
+.band{background:var(--band)}
+.head{text-align:center;max-width:680px;margin:0 auto 44px}
+.head h2{font-size:clamp(40px,5vw,60px)}
+:root[lang="ar"] .head h2{font-size:clamp(28px,3.6vw,42px)}
+.head p{color:var(--muted);margin-top:10px;font-size:16.5px}
+.icon{width:18px;height:18px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.muted{color:var(--muted)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:999px;font-weight:600;font-size:15px;white-space:nowrap;transition:background .2s,color .2s,border-color .2s}
+.btn-p{background:var(--brand);color:var(--brand-ink)}
+.btn-p:hover{background:#0E1133}
+.btn-o{border:1.5px solid var(--ink);color:var(--ink);background:var(--bg)}
+.btn-o:hover{background:var(--band)}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{background:#18964A}
+.btn-s{min-height:40px;padding:0 18px;font-size:14px}
+.btn-b{width:100%}
+
+/* header */
+.ann{background:var(--brand);color:#fff;font-size:13.5px;text-align:center;padding-block:7px}
+.ann a{text-decoration:underline;text-underline-offset:3px;margin-inline-start:6px;color:var(--gold)}
+.hdr{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--bg);border-bottom:1px solid var(--line)}
+.hdr .wrap{display:flex;align-items:center;gap:28px;height:72px}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand .logo{height:52px;width:auto}
+.brand b{display:block;font-size:17px;line-height:1.15;font-family:var(--fh);font-weight:800}
+.brand small{display:block;font-size:11px;color:var(--muted);letter-spacing:.06em}
+.nav{display:flex;gap:22px}
+.nav a{font-size:15px;color:var(--ink-2);padding-block:6px;border-bottom:2px solid transparent}
+.nav a:hover{color:var(--ink)}
+.nav a.on{color:var(--ink);border-color:var(--ink)}
+.hdr-cta{display:flex;align-items:center;gap:10px;margin-inline-start:auto}
+.burger{display:none;width:44px;height:44px;border-radius:50%;border:1px solid var(--line-2);place-items:center}
+@media (max-width:1000px){.nav,.hdr-cta .hide-m{display:none}.burger{display:grid}}
+.drawer{position:fixed;inset:0;z-index:80;background:rgba(14,15,26,.4);display:flex}
+.drawer-in{width:min(320px,86vw);height:100%;background:var(--bg);padding:calc(24px + env(safe-area-inset-top,0px)) 20px 24px;display:flex;flex-direction:column;gap:4px;overflow:auto}
+.drawer-in a{padding:12px 10px;border-bottom:1px solid var(--line);font-weight:500}
+
+/* hero */
+.hero{padding-block:clamp(64px,10vw,120px) clamp(56px,8vw,96px);position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.7fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(56px,8.4vw,112px);line-height:.92;letter-spacing:.005em}
+:root[lang="ar"] .hero h1{font-size:clamp(36px,5.2vw,62px);line-height:1.25;letter-spacing:0}
+.hero h1 .soft{color:var(--soft)}
+.hero .lede{color:var(--ink-2);font-size:18px;margin-top:22px;max-width:46ch}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+.hero-art{position:relative;display:grid;place-items:center}
+.hero-art img{position:relative;width:min(400px,100%);height:auto;animation:float 7s ease-in-out infinite}
+.hero-art .glow{position:absolute;width:62%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(242,183,5,.28),rgba(242,183,5,0) 68%);top:52%;left:50%;transform:translate(-50%,-50%);animation:glow 3.5s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-10px)}}
+@keyframes glow{50%{opacity:.45;transform:translate(-50%,-50%) scale(1.08)}}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr}.hero-art{order:-1;justify-self:center}.hero-art img{width:190px}}
+/* entrance + scroll reveal (content is visible by default; only below-the-fold blocks wait for scroll) */
+@keyframes up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.hero h1,.hero .lede,.hero .ctas,.hero-art{animation:up .7s cubic-bezier(.2,.7,.2,1) both}
+.hero .lede{animation-delay:.12s}.hero .ctas{animation-delay:.22s}.hero-art{animation-delay:.1s}
+.rv{transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.2,1)}
+.rv.pre{opacity:0;transform:translateY(22px)}
+.hdr{transition:box-shadow .25s}
+.hdr.scrolled{box-shadow:0 6px 20px -14px rgba(14,15,26,.35)}
+.btn .icon{transition:transform .2s}
+.btn .ia{transition:translate .2s}
+.btn:hover .ia{translate:3px 0}
+[dir="rtl"] .btn:hover .ia{translate:-3px 0}
+[dir="rtl"] .ia{transform:scaleX(-1)}
+.card,.cat,.rev,.why div{transition:transform .25s ease,box-shadow .25s ease,border-color .2s,opacity .6s ease}
+.card:hover,.cat:hover,.rev:hover{transform:translateY(-4px);box-shadow:0 18px 36px -24px rgba(14,15,26,.35)}
+.fab-wa::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--wa);animation:ping 2.6s ease-out infinite}
+@keyframes ping{from{transform:scale(1);opacity:.7}to{transform:scale(1.6);opacity:0}}
+.pop{animation:up .25s ease both}
+.marquee{overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.mtrack{display:flex;gap:14px;width:max-content;animation:mq 40s linear infinite}
+.marquee:hover .mtrack{animation-play-state:paused}
+.mtrack div{display:flex;align-items:center;justify-content:center;min-height:84px;padding:14px 28px;border:1px solid var(--line);border-radius:var(--r-s);font-weight:600;font-size:14.5px;color:var(--ink-2);background:var(--surface);white-space:nowrap}
+.mtrack img{max-height:48px;width:auto}
+@keyframes mq{to{transform:translateX(-50%)}}
+@keyframes mqr{to{transform:translateX(50%)}}
+[dir="rtl"] .mtrack{animation-name:mqr}
+
+/* category cards (like "For Individuals / For Organizations") */
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+@media (max-width:1100px){.cats{grid-template-columns:1fr 1fr}}
+@media (max-width:620px){.cats{grid-template-columns:1fr}}
+.cat{display:flex;flex-direction:column;gap:10px;padding:30px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+.cat h3{font-size:21px}
+.cat p{color:var(--muted);font-size:15px;min-height:3.4em}
+.cat .stack{display:flex;flex-direction:column;gap:10px;margin-top:16px}
+@media (max-width:900px){.cats{grid-template-columns:1fr}}
+
+/* course cards */
+.grid-c{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:22px}
+.card{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;min-width:0;transition:border-color .2s}
+.card:hover{border-color:var(--line-2)}
+.card-b{display:flex;flex-direction:column;gap:10px;padding:18px 20px 20px;flex:1}
+.card-b h3{font-size:18px}
+.card-b .sub{color:var(--muted);font-size:14px;margin-top:-4px}
+.facts{display:flex;flex-direction:column;gap:6px;font-size:14px;color:var(--ink-2);padding-block:12px;border-block:1px solid var(--line)}
+.facts span{display:flex;align-items:center;gap:8px}
+.facts .icon{width:16px;height:16px;color:var(--soft)}
+.card-f{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto;padding-top:6px}
+.price b{font-size:19px}
+.price small{font-size:12.5px;color:var(--muted);margin-inline-start:4px}
+.price s{display:block;font-size:12.5px;color:var(--soft)}
+.tag{display:inline-flex;align-items:center;padding:3px 10px;border-radius:999px;font-size:12px;font-weight:600;background:var(--band);color:var(--ink-2);white-space:nowrap}
+.tag.open{background:#E7F6EC;color:#16733B}
+.tag.soon{background:#FFF4D6;color:#8A6200}
+.tag.done,.tag.closed{background:var(--band);color:var(--muted)}
+
+/* poster: one flat colour, the round number, the title */
+/* poster: real image when uploaded, otherwise the academy's poster layout (white, crest, ROUND N, Arabic line, APPLY NOW) */
+.poster{container-type:inline-size;position:relative;aspect-ratio:1/1;max-width:100%;overflow:hidden;background:#fff;border-bottom:1px solid var(--line)}
+.poster.img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.card:hover .poster.img img{transform:scale(1.035)}
+.poster.gen{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:16px 16px 28px;color:#262A5C}
+.poster .dar{position:absolute;top:2px;left:6px;font-family:'Bebas Neue',Impact,sans-serif;font-size:19cqw;line-height:.88;color:transparent;-webkit-text-stroke:1px #E3E4EC;text-align:left;direction:ltr;pointer-events:none}
+.poster .dar.d2{top:auto;bottom:2px;left:auto;right:6px;text-align:right}
+.poster .pl{position:relative;width:38%;height:auto}
+.poster .season{position:relative;direction:ltr;font-size:5.2cqw;font-weight:500;margin-top:2cqw;align-self:flex-start;padding-inline-start:8%}
+.poster .season b{color:#F2B705;font-weight:500}
+.poster .en{position:relative;direction:ltr;font-family:'Bebas Neue',Impact,sans-serif;font-size:21cqw;line-height:.88;letter-spacing:.01em;white-space:nowrap}
+.poster .ar{position:relative;font-size:7cqw;font-weight:500;margin-top:1.5cqw;white-space:nowrap}
+.poster .ar b{color:#F2B705;font-weight:600}
+.poster .md{position:relative;direction:ltr;font-size:4.6cqw;font-weight:600;margin-top:2px}
+.poster .apply{position:relative;margin-top:10px;background:#262A5C;color:#fff;font-weight:700;font-size:11.5px;padding:5px 16px;letter-spacing:.06em;direction:ltr;clip-path:polygon(2% 0,100% 8%,98% 100%,0 92%)}
+.poster .handle{position:absolute;bottom:7px;left:10px;font-size:10px;color:#77798C;direction:ltr}
+.ribbon{position:absolute;top:16px;left:-36px;transform:rotate(-45deg);background:#F2B705;color:#fff;font-weight:700;font-size:11px;letter-spacing:.06em;padding:4px 44px;z-index:2;direction:ltr}
+.poster .ft b{font-size:18px}
+
+/* reviews */
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rev{display:flex;flex-direction:column;gap:16px;padding:28px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);margin:0}
+.stars{display:flex;gap:3px;color:var(--gold)}
+.stars svg{width:17px;height:17px;fill:currentColor}
+.stars .off{color:var(--line-2)}
+.rev p{color:var(--ink-2);font-size:16px;line-height:1.85}
+.who{display:flex;align-items:center;gap:12px;margin-top:auto}
+.av{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-weight:600;background:var(--band);flex:none;font-size:14px}
+.who b{display:block;font-size:14.5px}
+.who small{color:var(--muted);font-size:12.5px}
+@media (max-width:960px){.reviews{grid-template-columns:1fr}}
+
+/* impact numbers */
+.nums{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;text-align:center}
+.nums b{display:block;font-size:clamp(34px,4vw,48px);font-weight:700;line-height:1.1}
+.nums span{display:block;font-weight:600;margin-top:12px}
+.nums small{color:var(--muted);font-size:13.5px}
+@media (max-width:860px){.nums{grid-template-columns:repeat(2,1fr);gap:36px 20px}.nums div:last-child{grid-column:1/-1}}
+
+/* why */
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.why div{padding:26px;background:var(--surface);border-radius:var(--r);border:1px solid var(--line)}
+.why h4{font-size:17px;margin-bottom:8px}
+.why p{color:var(--muted);font-size:14.5px}
+@media (max-width:960px){.why{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.why{grid-template-columns:1fr}}
+
+/* history table */
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+table{width:100%;border-collapse:collapse;font-size:15px;min-width:520px}
+th,td{padding:14px 20px;text-align:start;border-bottom:1px solid var(--line)}
+th{font-size:13px;font-weight:600;color:var(--muted);background:var(--band)}
+tr:last-child td{border-bottom:0}
+
+/* partners */
+.partners{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.partners div{display:flex;align-items:center;justify-content:center;text-align:center;min-height:84px;padding:14px;border:1px solid var(--line);border-radius:var(--r-s);font-weight:600;font-size:14.5px;color:var(--ink-2);background:var(--surface)}
+.partners img{max-height:48px;width:auto}
+@media (max-width:760px){.partners{grid-template-columns:1fr 1fr}}
+
+/* faq */
+.faq{max-width:780px;margin-inline:auto;display:flex;flex-direction:column;gap:12px}
+.qa{border-radius:var(--r-s);background:var(--surface);border:1px solid var(--line)}
+.qa summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 22px;font-weight:600}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary .icon{transition:transform .2s;color:var(--muted)}
+.qa[open] summary .icon{transform:rotate(180deg)}
+.qa p{padding:0 22px 20px;color:var(--muted)}
+
+/* footer */
+.ftr{border-top:1px solid var(--line);padding-block:56px 40px}
+.ftr-g{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:30px}
+.ftr h5{font-size:14px;margin:0 0 12px}
+.ftr a{display:block;padding-block:4px;font-size:14.5px;color:var(--muted)}
+.ftr a:hover{color:var(--ink)}
+.ftr .note{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+@media (max-width:820px){.ftr-g{grid-template-columns:1fr 1fr}}
+.ftr-g>div{min-width:0}
+.social{flex-wrap:wrap}
+@media (max-width:560px){.ftr-g{grid-template-columns:1fr}}
+
+/* inner pages */
+.phead{padding-block:clamp(44px,6vw,72px) 28px}
+.phead h1{font-size:clamp(30px,4.6vw,48px);margin-top:10px}
+.phead p{color:var(--muted);max-width:60ch;margin-top:12px;font-size:16.5px}
+.crumbs{font-size:13.5px;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap}
+.crumbs a:hover{color:var(--ink)}
+.filters{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:28px}
+.pills{display:flex;gap:8px;flex-wrap:wrap}
+.pills button{padding:8px 16px;border-radius:999px;border:1px solid var(--line-2);font-size:14px;font-weight:500;color:var(--ink-2);background:var(--bg)}
+.pills button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.filters select{height:40px;border-radius:999px;border:1px solid var(--line-2);padding:0 14px;background:var(--bg);font-size:14px}
+.search{display:flex;align-items:center;gap:8px;padding:0 14px;height:40px;border-radius:999px;border:1px solid var(--line-2);margin-inline-start:auto;min-width:220px}
+.search input{border:0;background:none;outline:none;flex:1;min-width:0;font-size:14px}
+.empty{padding:48px 20px;text-align:center;color:var(--muted);border:1px dashed var(--line-2);border-radius:var(--r)}
+@media (max-width:640px){.search{margin-inline-start:0;width:100%}}
+
+/* course detail */
+.cd{display:grid;grid-template-columns:1fr 360px;gap:48px;align-items:start}
+.cd-side{position:sticky;top:96px;display:flex;flex-direction:column;gap:16px}
+.cd-side .poster{border-radius:var(--r)}
+.box{padding:24px;border-radius:var(--r);background:var(--surface);border:1px solid var(--line)}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:10px 16px;font-size:14.5px;margin:0 0 20px}
+.kv dt{color:var(--muted)}
+.kv dd{margin:0;font-weight:600;text-align:end}
+.cd h1{font-size:clamp(30px,4vw,44px)}
+.cd .lead{font-size:17.5px;color:var(--ink-2);margin-top:14px;max-width:60ch}
+.cd h2{font-size:22px;margin:40px 0 16px}
+.hrsbar{display:flex;height:10px;border-radius:99px;overflow:hidden;gap:2px;margin-bottom:6px}
+.hrsbar i{display:block;height:100%}
+.mods{border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.mod{display:grid;grid-template-columns:14px 1fr auto;gap:14px;align-items:center;padding:14px 20px;border-top:1px solid var(--line);font-size:15px}
+.mod:first-child{border-top:0}
+.mod i{width:10px;height:10px;border-radius:3px}
+.mod .h{color:var(--muted);white-space:nowrap}
+.mods .tot{display:flex;justify-content:space-between;padding:14px 20px;background:var(--band);font-weight:700}
+.outs{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.outs li{display:flex;gap:10px;align-items:flex-start;font-size:15px;color:var(--ink-2)}
+.outs .icon{color:#16733B;margin-top:5px}
+@media (max-width:960px){.cd{grid-template-columns:1fr}.cd-side{position:static;order:-1}.cd-side .poster{max-width:340px}}
+@media (max-width:560px){.outs{grid-template-columns:1fr}}
+
+/* forms */
+.field{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:500}
+.field input,.field select,.field textarea{height:48px;padding:0 14px;border-radius:var(--r-s);border:1px solid var(--line-2);background:var(--bg);outline:none;font-weight:400}
+.field textarea{height:100px;padding:12px 14px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--ink)}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:560px){.fgrid{grid-template-columns:1fr}}
+.ok-msg{display:flex;gap:10px;align-items:flex-start;padding:14px 16px;border-radius:var(--r-s);background:#E7F6EC;color:#14532D;font-size:15px}
+
+/* floating: WhatsApp right, assistant left */
+.fab{position:fixed;bottom:calc(22px + env(safe-area-inset-bottom,0px));z-index:70;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;box-shadow:0 8px 24px -8px rgba(14,15,26,.35)}
+.fab-wa{right:calc(20px + env(safe-area-inset-right,0px));background:var(--wa);color:#fff}
+.fab-ai{left:calc(20px + env(safe-area-inset-left,0px));background:var(--brand);color:#fff}
+.fab svg{width:26px;height:26px}
+.pop{position:fixed;bottom:calc(92px + env(safe-area-inset-bottom,0px));z-index:75;width:min(370px,calc(100vw - 32px));max-height:min(580px,calc(100vh - 140px));display:flex;flex-direction:column;border-radius:var(--r);overflow:hidden;background:var(--bg);border:1px solid var(--line-2);box-shadow:0 24px 60px -24px rgba(14,15,26,.35)}
+.pop-wa{right:calc(16px + env(safe-area-inset-right,0px))}
+.pop-ai{left:calc(16px + env(safe-area-inset-left,0px))}
+.pop-h{display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid var(--line)}
+.pop-h b{display:block;font-size:15px}
+.pop-h small{font-size:12.5px;color:var(--muted)}
+.pop-h .x{margin-inline-start:auto;width:34px;height:34px;border-radius:50%;display:grid;place-items:center}
+.pop-h .x:hover{background:var(--band)}
+.pop-b{flex:1;overflow:auto;padding:16px;display:flex;flex-direction:column;gap:10px;background:var(--band)}
+.msg{max-width:90%;padding:10px 14px;border-radius:14px;font-size:14.5px;line-height:1.7}
+.msg.bot{background:var(--bg);align-self:flex-start}
+.msg.me{background:var(--brand);color:#fff;align-self:flex-end}
+.chips{display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.chips button{padding:8px 14px;border-radius:999px;font-size:13.5px;border:1px solid var(--line-2);background:var(--bg);text-align:start}
+.chips button:hover,.chips button.on{border-color:var(--ink)}
+.mini{display:flex;gap:10px;align-items:center;padding:8px;border-radius:12px;background:var(--bg);border:1px solid var(--line);font-size:13px}
+.mini i{width:40px;height:48px;border-radius:8px;flex:none;display:grid;place-items:center;font-weight:700;font-style:normal;font-size:15px}
+.mini b{display:block;font-size:14px}
+.mini small{color:var(--muted)}
+.pop-f{padding:12px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:8px}
+.pop-f .row{display:flex;gap:6px}
+.pop-f select{flex:1;min-width:0;height:40px;border-radius:10px;border:1px solid var(--line-2);background:var(--bg);padding:0 8px;font-size:13px}
+.wa-num{display:flex;justify-content:space-between;gap:8px;font-size:13px;color:var(--muted)}
+
+/* modal + toast */
+.modal{position:fixed;inset:0;z-index:90;display:grid;place-items:center;padding:16px;background:rgba(14,15,26,.45)}
+.modal-in{width:min(460px,100%);max-height:calc(100vh - 32px);overflow:auto;background:var(--bg);border-radius:var(--r);padding:28px;position:relative}
+.modal-in h3{font-size:22px}
+.modal-in .x{position:absolute;top:14px;inset-inline-end:14px;width:36px;height:36px;border-radius:50%;display:grid;place-items:center}
+.gbtn{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;height:50px;border-radius:999px;border:1.5px solid var(--line-2);font-weight:600}
+.gbtn .g{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;color:#4285F4;font-weight:800;font-family:Arial,sans-serif;border:1px solid var(--line-2)}
+.or{display:flex;align-items:center;gap:12px;color:var(--muted);font-size:13px;margin:16px 0}
+.or::before,.or::after{content:"";flex:1;height:1px;background:var(--line)}
+.toast{position:fixed;top:calc(84px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);z-index:95;padding:12px 18px;border-radius:12px;background:var(--ink);color:#fff;font-size:14px}
+/* university workshops */
+.ws{display:grid;grid-template-columns:1.5fr 1fr;gap:40px;align-items:center}
+.ws-k{direction:ltr;text-align:start;font-family:'Bebas Neue',Impact,sans-serif;font-size:22px;letter-spacing:.03em;color:#262A5C}
+.ws-k b{color:#F2B705;font-weight:400}
+.ws h2{font-size:clamp(28px,3.6vw,40px);margin-top:4px}
+.ws>div>p{color:var(--muted);margin-top:10px;max-width:52ch}
+.ws-list{list-style:none;padding:0;margin:26px 0 0;display:flex;flex-direction:column;gap:10px}
+.ws-list li{display:grid;grid-template-columns:44px 1fr auto;gap:14px;align-items:center}
+.ws-list .rk{font-family:'Bebas Neue',Impact,sans-serif;font-size:26px;color:#262A5C;direction:ltr;text-align:center}
+.ws-list .nm{font-size:15px;font-weight:500;min-width:0}
+.ws-list .bar{display:block;height:6px;border-radius:9px;background:var(--band);margin-top:6px;overflow:hidden}
+.ws-list .bar i{display:block;height:100%;background:#262A5C;border-radius:inherit;transform-origin:left;animation:grow 1.1s cubic-bezier(.2,.7,.2,1) both}
+@keyframes grow{from{transform:scaleX(0)}}
+.ws-list .at{font-family:'Bebas Neue',Impact,sans-serif;font-size:22px;background:#262A5C;color:#fff;padding:2px 10px;line-height:1.2;direction:ltr}
+.person{position:relative;border-radius:var(--r);background:var(--band);padding:26px 22px 22px;text-align:center;overflow:hidden}
+.person img{width:min(240px,80%);height:auto;margin:0 auto;border-radius:12px}
+.person b{display:block;font-size:18px;margin-top:14px}
+.person small{display:block;color:var(--muted);font-size:14px}
+.person .tot{display:inline-flex;align-items:center;gap:10px;margin-top:16px;direction:ltr;font-family:'Bebas Neue',Impact,sans-serif;font-size:22px;color:#262A5C}
+.person .tot span{background:#262A5C;color:#fff;padding:2px 12px}
+@media (max-width:900px){.ws{grid-template-columns:1fr}}
+.rev .q{font-size:40px;line-height:.6;color:#F2B705;font-family:Georgia,serif;height:16px}
+.rev.fb{border-color:#F2D27A}
+.holding{display:inline-flex;align-items:center;gap:10px;margin-top:16px;font-size:13px;color:var(--muted)}
+.holding img{height:34px;width:auto;mix-blend-mode:multiply}
+.social{display:flex;gap:8px;margin-top:14px;direction:ltr;justify-content:flex-end}
+.social a{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#262A5C;color:#fff;font-size:12px;font-weight:700;padding:0}
+.ws-list .uni{width:44px;height:44px;border-radius:50%;box-shadow:0 2px 8px -2px rgba(14,15,26,.35);background:#fff}
+.ws-list .nm small{display:inline-block;margin-inline-start:8px;font-size:12.5px;color:var(--muted);font-weight:400}
+.ws-photos{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:36px}
+.ph{position:relative;display:block;border-radius:var(--r-s);overflow:hidden;background:var(--band);padding:0;cursor:zoom-in}
+.ph img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.ph:hover img{transform:scale(1.05)}
+.ws-photos .ph{aspect-ratio:4/3}
+@media (max-width:900px){.ws-photos{grid-template-columns:repeat(3,1fr)}}
+.gal{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:repeat(2,minmax(0,1fr));gap:12px;aspect-ratio:2.2/1}
+.gal .big{grid-row:1/3}
+.gal .ph{border-radius:var(--r)}
+.gal .cap{position:absolute;inset:auto 0 0;padding:28px 16px 12px;color:#fff;font-size:14px;font-weight:500;text-align:start;background:linear-gradient(transparent,rgba(14,15,26,.7))}
+.gal .ph:nth-child(4){grid-column:2/4}
+@media (max-width:760px){.gal{grid-template-columns:1fr 1fr;grid-template-rows:none;aspect-ratio:auto}.gal .big{grid-column:1/3;grid-row:auto;aspect-ratio:4/3}.gal .ph{aspect-ratio:4/3}.gal .ph:nth-child(4){grid-column:auto}}
+.modal.lb{background:rgba(8,9,20,.88)}
+.lb figure{margin:0;max-width:min(1200px,100%);text-align:center}
+.lb img{max-width:100%;max-height:calc(100vh - 120px);border-radius:12px;margin:0 auto}
+.lb figcaption{color:#fff;margin-top:12px;font-size:15px}
+.lbx{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));inset-inline-end:16px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.12);color:#fff}
+/* banner */
+.bn-sec{padding-block:0 clamp(48px,7vw,80px)}
+.bn{margin:0;border-radius:var(--r);overflow:hidden;background:#E9E9EE;box-shadow:0 30px 60px -40px rgba(14,15,26,.45)}
+.bn img{width:100%;height:auto;display:block;transform-origin:center;transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.bn.rvz img{transform:scale(1.08)}
+.bn.rvz.in img{transform:none}
+/* word reveal */
+.sw .w{display:inline-block;overflow:hidden;vertical-align:bottom;padding-block:.06em .12em;margin-block:-.06em -.12em}
+.sw .w>span{display:inline-block;transform:translateY(110%);transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.sw.in .w>span{transform:none}
+.hero h1{animation:none}
+@media (prefers-reduced-motion:reduce){.sw .w>span{transform:none}.bn.rvz img{transform:none}*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv.pre{opacity:1;transform:none}}
+.ws-list .bar i{}
+[dir="rtl"] .ws-list .bar i{transform-origin:right}
+.poster.gen{direction:ltr}
+.poster .ar{direction:rtl}
+.lang span{font-weight:600}
+.lang .ls{display:none}
+@media (max-width:560px){.hdr .wrap{gap:10px}.brand small{display:none}.brand b{font-size:15px}.brand .logo{height:44px}.lang .lf{display:none}.lang .ls{display:inline}.hdr-cta{gap:6px}.hdr-cta .btn-s{padding:0 12px}}
+.lang[lang="ar"] span{font-family:"Readex Pro",sans-serif}
+
+/* ---- popup visibility fix: honour [hidden] despite .pop{display:flex} ---- */
+.pop[hidden]{display:none}
+
+/* ---- intro reveal (shown once per session) ---- */
+#intro{position:fixed;inset:0;z-index:200;display:grid;place-items:center;overflow:hidden;
+  background:radial-gradient(130% 100% at 50% 0,#20265C 0,#171B47 55%,#0E1133 100%);
+  transition:transform .85s cubic-bezier(.76,0,.24,1),opacity .6s ease .25s}
+#intro.done{transform:translateY(-100%);opacity:0;pointer-events:none}
+.intro-in{display:flex;flex-direction:column;align-items:center;gap:28px;text-align:center;padding:24px}
+.intro-badge{position:relative;width:min(188px,44vw);aspect-ratio:1;display:grid;place-items:center;background:#fff;border-radius:28px;
+  box-shadow:0 34px 80px -34px rgba(0,0,0,.65);transform:scale(.7);opacity:0;animation:introPop .9s cubic-bezier(.2,.8,.2,1) .15s forwards}
+.intro-badge::after{content:"";position:absolute;inset:-3px;border-radius:31px;border:2px solid var(--gold);opacity:0;animation:introRing 1s ease .55s forwards}
+.intro-badge img{width:84%;height:auto}
+.intro-line{display:flex;gap:.38em;flex-wrap:wrap;justify-content:center;font-family:'Bebas Neue',Impact,sans-serif;
+  font-size:clamp(30px,7.5vw,66px);letter-spacing:.02em;color:#fff;line-height:1;direction:ltr}
+.intro-line b{color:var(--gold);font-weight:400}
+.intro-line span{display:inline-block;opacity:0;transform:translateY(32px);animation:introWord .7s cubic-bezier(.2,.8,.2,1) forwards}
+.intro-line span:nth-child(1){animation-delay:.52s}
+.intro-line span:nth-child(2){animation-delay:.7s}
+.intro-line span:nth-child(3){animation-delay:.88s}
+.intro-skip{position:absolute;top:calc(18px + env(safe-area-inset-top,0px));inset-inline-end:18px;color:rgba(255,255,255,.7);
+  font-size:13px;border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:7px 16px;opacity:0;animation:introWord .5s ease 1.15s forwards}
+.intro-skip:hover{color:#fff;border-color:#fff}
+@keyframes introPop{to{transform:scale(1);opacity:1}}
+@keyframes introRing{to{opacity:.9;inset:-9px}}
+@keyframes introWord{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){#intro{display:none!important}}
+
+/* ---- announcement -> live notification bar ---- */
+.ann{background:linear-gradient(90deg,#171B47,#20265C);color:#fff;font-size:13.5px;padding-block:9px;position:relative;overflow:hidden}
+.ann::before{content:"";position:absolute;top:0;bottom:0;width:38%;left:-38%;pointer-events:none;background:linear-gradient(90deg,transparent,rgba(242,183,5,.16),transparent);animation:annShine 5.5s ease-in-out infinite}
+@keyframes annShine{0%{left:-38%}55%,100%{left:120%}}
+.ann .wrap{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:nowrap}
+.ann-dot{width:8px;height:8px;border-radius:50%;background:var(--gold);flex:none;box-shadow:0 0 0 0 rgba(242,183,5,.6);animation:annPulse 1.8s ease-out infinite}
+@keyframes annPulse{to{box-shadow:0 0 0 7px rgba(242,183,5,0)}}
+.ann-tag{background:var(--gold);color:#171B47;font-weight:800;font-size:10.5px;letter-spacing:.08em;padding:2px 8px;border-radius:5px;flex:none;direction:ltr}
+.ann-txt{color:#fff;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ann a.ann-cta{color:var(--gold);font-weight:700;text-decoration:none;white-space:nowrap;flex:none;margin-inline-start:2px}
+.ann a.ann-cta:hover{text-decoration:underline;text-underline-offset:3px}
+@media (max-width:560px){.ann{font-size:12.5px}.ann .wrap{gap:7px}.ann-txt{max-width:50vw}}
+
+/* ---- AI assistant fab + popup header ---- */
+.fab-ai{background:linear-gradient(135deg,#2a3170,#171B47);color:var(--gold)}
+.fab-ai svg{filter:drop-shadow(0 1px 2px rgba(0,0,0,.35))}
+.ai-ava{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg,#2a3170,#171B47);color:var(--gold);flex:none}
+.ai-ava svg{width:20px;height:20px}
+
+/* ---- hero typewriter caret (gold) ---- */
+.hero .caret{display:inline-block;width:3px;height:.8em;background:var(--gold);margin-inline-start:7px;border-radius:2px;vertical-align:-.04em;animation:caretBlink 1.05s step-end infinite}
+@keyframes caretBlink{50%{opacity:0}}
+
+/* ---- gold brand touches ---- */
+.head h2{position:relative}
+.head h2::after{content:"";display:block;width:52px;height:3px;border-radius:2px;background:var(--gold);margin:16px auto 0}
+.hero .kicker{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;letter-spacing:.03em;color:#8A6200;background:#FFF6DC;border:1px solid #F2D27A;padding:6px 14px;border-radius:999px;margin-bottom:20px}
+.hero .kicker svg{width:15px;height:15px;fill:var(--gold);stroke:none}
+.hero .kicker b{color:var(--ink);font-weight:800;margin-inline-end:2px}
+
+/* ---- why -> icon feature cards (modern, BDI-style) ---- */
+.why div{text-align:center}
+.why .wic{width:54px;height:54px;margin:0 auto 14px;border-radius:15px;display:grid;place-items:center;background:linear-gradient(150deg,#EEF0FA,#F7F2E2);color:var(--brand);border:1px solid var(--line)}
+.why .wic svg{width:26px;height:26px}
+
+/* ---- past-rounds showcase (photo/poster + stats + rating, framed) ---- */
+.rc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+.rc{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--surface);display:flex;flex-direction:column;transition:transform .25s ease,box-shadow .25s ease}
+.rc:hover{transform:translateY(-4px);box-shadow:0 18px 36px -24px rgba(14,15,26,.35)}
+.rc-ph{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--band)}
+.rc-ph img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.rc:hover .rc-ph img{transform:scale(1.05)}
+.rc-ph::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(14,15,26,.55),transparent 44%)}
+.rc-rate{position:absolute;top:12px;inset-inline-start:12px;z-index:2;background:var(--gold);color:#171B47;font-weight:800;font-size:13px;padding:4px 11px;border-radius:999px;display:inline-flex;gap:5px;align-items:center}
+.rc-rate svg{width:13px;height:13px;fill:#171B47;stroke:none}
+.rc-tag{position:absolute;top:12px;inset-inline-end:12px;z-index:2;background:rgba(255,255,255,.94);color:var(--brand);font-weight:700;font-size:12px;padding:4px 11px;border-radius:999px}
+.rc-no{position:absolute;bottom:10px;inset-inline-start:14px;z-index:2;color:#fff;font-family:'Bebas Neue',Impact,sans-serif;font-size:25px;letter-spacing:.03em;direction:ltr;line-height:1}
+.rc-b{padding:16px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.rc-b h3{font-size:19px}
+.rc-b p{color:var(--muted);font-size:13.5px;line-height:1.7;flex:1}
+.rc-st{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px;border-top:1px solid var(--line);padding-top:14px}
+.rc-st div{text-align:center}
+.rc-st b{display:block;font-size:22px;font-weight:800;color:var(--brand);line-height:1}
+.rc-st span{font-size:12px;color:var(--muted);margin-top:5px;display:block}
+
+/* ---- dark navy footer ---- */
+.ftr{background:var(--brand);color:#fff;border-top:0}
+.ftr .brand b{color:#fff}
+.ftr .brand small{color:rgba(255,255,255,.55)}
+.ftr .brand .logo{background:#fff;border-radius:11px;padding:5px}
+.ftr .muted{color:rgba(255,255,255,.62)!important}
+.ftr h5{color:#fff}
+.ftr a{color:rgba(255,255,255,.72)}
+.ftr a:hover{color:#fff}
+.ftr .holding{color:rgba(255,255,255,.6)}
+.ftr .holding img{mix-blend-mode:normal;background:#fff;padding:5px 9px;border-radius:7px;height:40px}
+.ftr .social a{background:rgba(255,255,255,.12);color:#fff}
+.ftr .social a:hover{background:var(--gold);color:#171B47}
+.ftr .note{border-top-color:rgba(255,255,255,.14);color:rgba(255,255,255,.55)}
+.ftr .note a{color:rgba(255,255,255,.78)!important}
+
+/* ---- intro cover: promo + clearer skip ---- */
+.intro-badge{width:min(132px,32vw)}
+.intro-line{font-size:clamp(26px,6.2vw,52px)}
+.intro-in{max-height:calc(100vh - 24px);overflow:auto;gap:22px}
+.intro-promo{display:flex;align-items:center;gap:14px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:12px;max-width:430px;width:calc(100% - 20px);opacity:0;animation:introWord .6s ease 1.05s forwards}
+.intro-promo img{width:82px;height:82px;object-fit:cover;border-radius:11px;flex:none;background:#fff}
+.intro-promo .ip-b{display:flex;flex-direction:column;align-items:flex-start;min-width:0;flex:1}
+.intro-promo .ip-k{font-size:11px;font-weight:800;letter-spacing:.09em;color:var(--gold);text-transform:uppercase}
+.intro-promo .ip-t{color:#fff;font-weight:700;font-size:15.5px;margin:3px 0 9px;line-height:1.3}
+.intro-promo .ip-cta{display:inline-flex;align-items:center;gap:6px;background:var(--gold);color:#171B47;font-weight:800;font-size:13px;padding:7px 15px;border-radius:999px}
+.intro-skip{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:600;color:#fff;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:8px 15px}
+.intro-skip:hover{background:rgba(255,255,255,.22);border-color:#fff}
+.intro-skip svg{width:14px;height:14px}
+
+/* ---- round card body (team photo + graduates + elec/mech split) ---- */
+.rc-yr{position:absolute;top:12px;inset-inline-end:12px;z-index:2;background:rgba(255,255,255,.94);color:var(--brand);font-weight:800;font-size:12px;padding:4px 11px;border-radius:999px;direction:ltr}
+.rc-grad{display:flex;flex-direction:column;align-items:flex-start;gap:2px;margin-bottom:6px}
+.rc-grad b{font-size:30px;font-weight:800;color:var(--brand);line-height:1}
+.rc-grad span{font-size:13px;color:var(--muted)}
+.rc-bar{display:flex;height:10px;border-radius:999px;overflow:hidden;background:var(--gold)}
+.rc-bar i{display:block;height:100%;background:var(--brand)}
+.rc-leg{display:flex;justify-content:space-between;gap:8px;margin-top:10px;font-size:12.5px;color:var(--ink-2)}
+.rc-leg i{width:10px;height:10px;border-radius:3px;display:inline-block;margin-inline-end:6px;vertical-align:-1px}
+.rc-leg i.e{background:var(--brand)}
+.rc-leg i.m{background:var(--gold)}
+
+/* ---- rounds analytics dashboard ---- */
+.dash{display:flex;flex-direction:column;gap:20px;margin-bottom:38px}
+.dash-tiles{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.dash-tiles .tile{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px 14px;text-align:center}
+.dash-tiles .tile b{display:block;font-size:clamp(24px,2.8vw,34px);font-weight:800;color:var(--brand);line-height:1}
+.dash-tiles .tile span{display:block;font-size:12.5px;color:var(--muted);margin-top:8px}
+@media(max-width:820px){.dash-tiles{grid-template-columns:repeat(2,1fr)}.dash-tiles .tile:last-child{grid-column:1/-1}}
+.dash-panels{display:grid;grid-template-columns:1.5fr 1fr;gap:18px}
+@media(max-width:820px){.dash-panels{grid-template-columns:1fr}}
+.dash-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:22px}
+.dash-card h4{font-size:15px;margin-bottom:20px}
+.bars{display:flex;align-items:flex-end;gap:8px;height:170px}
+.bars .bar{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;gap:6px}
+.bars .bar i{display:block;width:100%;max-width:40px;background:linear-gradient(180deg,#3a4186,#171B47);border-radius:6px 6px 0 0;min-height:4px}
+.bars .bar .bv{font-size:10.5px;color:var(--muted);font-weight:700;font-variant-numeric:tabular-nums}
+.bars .bar .bl{font-size:12px;color:var(--ink-2);font-weight:700;direction:ltr}
+.splitv{display:flex;flex-direction:column;justify-content:center;height:100%;gap:18px}
+.split-bar{display:flex;height:18px;border-radius:999px;overflow:hidden}
+.split-bar .e{background:var(--brand)}.split-bar .m{background:var(--gold)}
+.split-leg{display:flex;flex-direction:column;gap:12px}
+.split-leg div{display:flex;justify-content:space-between;align-items:center;font-size:14px}
+.split-leg b{font-weight:800}
+.split-leg .dot{width:12px;height:12px;border-radius:3px;display:inline-block;margin-inline-end:8px;vertical-align:-1px}
+.split-leg .dot.e{background:var(--brand)}.split-leg .dot.m{background:var(--gold)}
+
+/* ---- entry promo as a blurred modal ---- */
+#intro{background:rgba(10,12,28,.6);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);transition:opacity .5s ease}
+#intro.done{transform:none;opacity:0;pointer-events:none}
+.intro-card{position:relative;background:linear-gradient(160deg,#222a63,#141737);border:1px solid rgba(255,255,255,.14);border-radius:26px;padding:40px 28px 30px;max-width:470px;width:calc(100% - 32px);box-shadow:0 50px 120px -30px rgba(0,0,0,.75);text-align:center;opacity:0;transform:translateY(14px);animation:cardIn .55s ease .05s forwards}
+@keyframes cardIn{to{opacity:1;transform:none}}
+.intro-card .intro-in{max-height:none;overflow:visible;gap:20px;padding:0}
+.intro-card .intro-badge{width:116px}
+.intro-card .intro-line{font-size:clamp(23px,5.2vw,40px)}
+.intro-card .intro-skip{position:absolute;top:13px;inset-inline-end:13px}
+.intro-card .intro-promo{max-width:none;width:100%}
+
+/* ---- hero electric motif + rotating typewriter ---- */
+.hero-art .orb{position:absolute;width:80%;aspect-ratio:1;border-radius:50%;top:50%;left:50%;transform:translate(-50%,-50%);background:conic-gradient(from 0deg,rgba(23,27,71,0),rgba(242,183,5,.22),rgba(23,27,71,0),rgba(47,54,114,.26),rgba(23,27,71,0));filter:blur(16px);animation:spin 16s linear infinite;z-index:0}
+.hero-art .ring{position:absolute;border-radius:50%;top:50%;left:50%;transform:translate(-50%,-50%);z-index:0;pointer-events:none}
+.hero-art .ring.r1{width:90%;aspect-ratio:1;border:1.5px dashed rgba(23,27,71,.16);animation:spin 28s linear infinite}
+.hero-art .ring.r2{width:112%;aspect-ratio:1;border:1.5px dashed rgba(242,183,5,.26);animation:spin 40s linear infinite reverse}
+.hero-art img{position:relative;z-index:1}
+@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+.hero-rot{margin-top:16px;font-size:clamp(17px,2.3vw,23px);font-weight:700;color:var(--ink);display:flex;align-items:center;gap:8px;flex-wrap:wrap;min-height:1.7em}
+.hero-rot>span{color:var(--muted);font-weight:600}
+.hero-rot b{color:var(--brand);font-weight:800}
+.hero-rot .caret{height:1em;margin-inline-start:2px}
+@media (prefers-reduced-motion:reduce){.hero-art .orb,.hero-art .ring{animation:none}}
+.hero-art .tri{position:absolute;z-index:0;clip-path:polygon(50% 0,100% 100%,0 100%);box-shadow:0 14px 30px -14px rgba(14,15,26,.3)}
+.hero-art .t1{width:clamp(70px,11vw,118px);aspect-ratio:1;background:linear-gradient(155deg,#343c82,#171B47);top:-2%;right:2%;border-radius:14px;animation:floaty 7s ease-in-out infinite}
+.hero-art .t2{width:clamp(50px,8vw,84px);aspect-ratio:1;background:linear-gradient(155deg,#F7C838,#E3A200);bottom:3%;left:0;border-radius:12px;animation:floaty 9s ease-in-out infinite reverse}
+.hero-art .t3{width:clamp(38px,6vw,62px);aspect-ratio:1;background:#DEE1F2;top:56%;right:-2%;border-radius:10px;animation:floaty 8s ease-in-out .6s infinite}
+@keyframes floaty{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-20px) rotate(14deg)}}
+@media (prefers-reduced-motion:reduce){.hero-art .tri{animation:none}}
+@media (max-width:860px){.hero-art .tri{display:none}}
+
+/* choose-your-track: icons + top accent */
+.cat{position:relative;overflow:hidden}
+.cat::before{content:"";position:absolute;top:0;left:0;width:100%;height:4px;background:linear-gradient(90deg,var(--brand),var(--gold));transform:scaleX(0);transform-origin:left;transition:transform .3s ease}
+.cat:hover::before{transform:scaleX(1)}
+.cat-ic{width:50px;height:50px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(150deg,#EEF0FA,#F7F2E2);color:var(--brand);border:1px solid var(--line);margin-bottom:6px}
+.cat-ic svg{width:25px;height:25px}
+</style>
+
+<script src="dk-data.js" charset="utf-8"></script>
+
+<div id="intro" role="presentation">
+  <div class="intro-card">
+    <button class="intro-skip" type="button" id="introSkip" aria-label="Skip">Skip <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <div class="intro-in">
+      <div class="intro-badge"><img src="assets/logo.png" alt="Dar Alkahrbaa Training Center" width="116" height="116"></div>
+      <div class="intro-line"><span>WE BUILD.</span><span>WE&nbsp;<b>TRAIN.</b></span><span>WE LEAD.</span></div>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var el=document.getElementById('intro');if(!el)return;
+  var seen=false;try{seen=sessionStorage.getItem('dk-intro')==='1';}catch(e){}
+  var reduce=false;try{reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;}catch(e){}
+  /* DEMO: shows on every load so it's easy to preview. For production, change to (seen||reduce) to show once per session (admin-controlled later). */
+  if(reduce){if(el.parentNode)el.parentNode.removeChild(el);return;}
+  /* featured-course promo on the cover */
+  try{
+    var st=(window.DK&&DK.load)?DK.load():null;
+    if(st&&st.courses){
+      var lang='en';try{lang=localStorage.getItem('dk-lang')==='ar'?'ar':'en';}catch(e){}
+      var op=st.courses.filter(function(c){return c.status==='open'&&c.featured&&!c.hidden;});
+      op.sort(function(a,b){return (b.ribbon?1:0)-(a.ribbon?1:0);});
+      var c=op[0];
+      if(c){
+        var a=document.createElement('a');a.className='intro-promo';a.href='#course-'+c.id;a.dir=lang==='ar'?'rtl':'ltr';
+        var img=document.createElement('img');img.src=c.image||'assets/logo.png';img.alt='';
+        var b=document.createElement('span');b.className='ip-b';
+        var k=document.createElement('span');k.className='ip-k';k.textContent=lang==='ar'?'مفتوح للتسجيل':'Open for registration';
+        var tt=document.createElement('span');tt.className='ip-t';tt.textContent=lang==='ar'?c.title:(c.title_en||c.title);
+        var cta=document.createElement('span');cta.className='ip-cta';cta.textContent=(lang==='ar'?'سجّل الآن':'Register now')+' →';
+        b.appendChild(k);b.appendChild(tt);b.appendChild(cta);a.appendChild(img);a.appendChild(b);
+        el.querySelector('.intro-in').appendChild(a);
+      }
+    }
+  }catch(e){}
+  var killed=false;
+  function done(){if(killed)return;killed=true;el.classList.add('done');try{sessionStorage.setItem('dk-intro','1');}catch(e){}try{window.dispatchEvent(new Event('dk-intro-done'));}catch(e){}setTimeout(function(){if(el&&el.parentNode)el.parentNode.removeChild(el);},900);}
+  var timer=setTimeout(done,4800);
+  el.addEventListener('click',function(){clearTimeout(timer);done();});
+})();
+</script>
+
+<div class="ann" id="ann"></div>
+<header class="hdr">
+  <div class="wrap">
+    <a class="brand" href="#home" id="brandTop"></a>
+    <nav class="nav" id="nav"></nav>
+    <div class="hdr-cta">
+      <button class="btn btn-o btn-s lang" id="langBtn" type="button"></button>
+      <button class="btn btn-wa btn-s hide-m" data-open-wa id="hdrWa"></button>
+      <span id="userSlot"></span>
+      <button class="burger" id="burger" aria-label="Menu"><svg class="icon"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="view"></main>
+
+<footer class="ftr"><div class="wrap" id="ftr"></div></footer>
+
+<button class="fab fab-wa" id="fabWa" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-wa"/></svg></button>
+<button class="fab fab-ai" id="fabAi" aria-label="DK AI Assistant"><svg class="icon" viewBox="0 0 24 24" style="width:27px;height:27px"><use href="#i-ai"/></svg></button>
+
+<div class="pop pop-wa" id="popWa" hidden></div>
+<div class="pop pop-ai" id="popAi" hidden>
+  <div class="pop-h" id="aiHead"></div>
+  <div class="pop-b" id="aiBody"></div>
+  <form class="pop-f" id="aiForm">
+    <div class="row">
+      <select id="aiSpec"></select>
+      <select id="aiLevel"></select>
+      <select id="aiMode"></select>
+    </div>
+    <button class="btn btn-p btn-s" type="submit" id="aiGo"></button>
+  </form>
+</div>
+
+<div id="modalRoot"></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5M16 4.8a3.5 3.5 0 0 1 0 6.4M18 14.6c2 .7 3.2 2.5 3.6 5.4"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4.2 4.1-6.5 8-6.5s7 2.3 8 6.5"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol>
+    <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M9.3 9.3a2.8 2.8 0 1 1 3.9 2.6c-.8.3-1.2 1-1.2 1.8v.6M12 17.3v.2"/></symbol>
+    <symbol id="i-ai" viewBox="0 0 24 24"><rect x="4.5" y="8" width="15" height="10.5" rx="3.5"/><path d="M12 4.7V8"/><circle cx="12" cy="3.6" r="1.05"/><circle cx="9.4" cy="12.9" r="1.2"/><circle cx="14.6" cy="12.9" r="1.2"/><path d="M9.7 16.1h4.6"/><path d="M2.7 11.7v3.1M21.3 11.7v3.1"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.6 4.4L18 9l-4.4 1.6L12 15l-1.6-4.4L6 9l4.4-1.6z"/></symbol>
+    <symbol id="i-cert" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5"/><path d="M8.5 13.5 7 21l5-2.5L17 21l-1.5-7.5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M10 8.5l6 3.5-6 3.5z"/></symbol>
+    <symbol id="i-badge" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9.2 12l2 2 3.6-3.8"/></symbol>
+    <symbol id="i-site" viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-4 7 4v13M9 21v-5h6v5"/></symbol>
+    <symbol id="i-rec" viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3z"/></symbol>
+    <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M21.5 12h-3M5.5 12h-3M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1M18.7 18.7l-2.1-2.1M7.4 7.4L5.3 5.3"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M6 21v-7M12 21V4M18 21v-10"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M12 4 2.5 8.5 12 13l9.5-4.5z"/><path d="M6.5 10.8V15c0 1.3 2.5 2.4 5.5 2.4s5.5-1.1 5.5-2.4v-4.2"/><path d="M21.5 8.5v5"/></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.8 14.06c-.24.68-1.42 1.3-1.95 1.35-.5.05-1.13.07-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.8-4.17-4.94-4.36-.14-.19-1.18-1.57-1.18-3s.75-2.13 1.02-2.42c.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.66.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.3-.13.59.17.29.74 1.22 1.58 1.97 1.09.97 2 1.27 2.29 1.42.29.14.46.12.63-.07.17-.2.72-.84.92-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.94.29.14.48.21.55.33.07.12.07.69-.17 1.36z"/></symbol>
+  </defs>
+</svg>
+
+<script>
+(function(){
+'use strict';
+var S=DK.load(), VIEW=document.getElementById('view'), user=null, LANG='en';
+try{user=JSON.parse(localStorage.getItem('dk-user')||'null');}catch(e){}
+try{LANG=localStorage.getItem('dk-lang')==='ar'?'ar':'en';}catch(e){}
+function norm(){S.courses.forEach(function(c){c.mode=c.mode||[];c.modules=c.modules||[];c.poster=c.poster||{a:'#262A5C',b:'#F2B705',mark:''};c.outcomes=c.outcomes||[];});['reviews','partners','faq','archive','leads'].forEach(function(k){S[k]=S[k]||[];});}
+norm();
+
+/* ---------- language ---------- */
+function t(en,ar){return LANG==='ar'?ar:en;}
+function L(o,f){if(!o)return '';var v=o[f+'_en'];if(LANG==='en'&&v!=null&&v!=='')return v;return o[f]==null?'':o[f];}
+function ML(m){return LANG==='en'?(DK.modeEn[m]||m):m;}
+function SL(s){return (LANG==='en'?DK.statusLabelEn:DK.statusLabel)[s]||'';}
+function KL(k){return (LANG==='en'?DK.kindLabelEn:DK.kindLabel)[k]||'';}
+function OUT(c){return LANG==='en'&&c.outcomes_en?c.outcomes_en:c.outcomes;}
+
+/* ---------- helpers ---------- */
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+function n(v){return Number(v||0).toLocaleString('en-US');}
+function ic(id,cls){return '<svg class="icon'+(cls?' '+cls:'')+'"><use href="#'+id+'"/></svg>';}
+function arrow(){return ic('i-arrow','ia');}
+function cat(id){for(var i=0;i<S.categories.length;i++)if(S.categories[i].id===id)return S.categories[i];return {name:'',desc:''};}
+function course(id){for(var i=0;i<S.courses.length;i++)if(S.courses[i].id===id)return S.courses[i];return null;}
+function fmtDate(d){if(!d)return '';try{return new Date(d+'T00:00:00').toLocaleDateString(LANG==='ar'?'ar-EG-u-nu-latn':'en-GB',{day:'numeric',month:'long',year:'numeric'});}catch(e){return d;}}
+function live(){return S.courses.filter(function(c){return c.status!=='done'&&!c.hidden;});}
+function byStart(a,b){return (a.start||'9999')<(b.start||'9999')?-1:1;}
+function initials(name){var p=String(name).replace(/^(م\.|Eng\.)\s*/,'').split(' ');return (p[0]||'').charAt(0)+(p[1]?p[1].charAt(0):'');}
+function stars(k){var h='';for(var i=1;i<=5;i++)h+='<svg class="'+(i<=k?'':'off')+'" viewBox="0 0 24 24"><use href="#i-star"/></svg>';return '<div class="stars" aria-label="'+k+'/5">'+h+'</div>';}
+function toast(x){var el=document.createElement('div');el.className='toast';el.textContent=x;document.body.appendChild(el);setTimeout(function(){el.remove();},2500);}
+function waLink(x){return 'https://wa.me/'+encodeURIComponent(S.settings.whatsapp)+'?text='+encodeURIComponent(x||'');}
+function waIcon(sz){return '<svg viewBox="0 0 24 24" fill="currentColor" width="'+(sz||18)+'" height="'+(sz||18)+'"><use href="#i-wa"/></svg>';}
+function hello(){return t('Hello, ','السلام عليكم، ');}
+
+/* ---------- poster + card ---------- */
+function arNum(s){return esc(s).replace(/(\d+)/g,'<b>$1</b>');}
+function poster(c){
+  var p=c.poster||{}, rib=c.ribbon?'<span class="ribbon">'+esc(c.ribbon)+'</span>':'';
+  if(c.image)return '<div class="poster img">'+rib+'<img src="'+esc(c.image)+'" alt="'+esc(L(c,'title'))+'" loading="lazy"></div>';
+  var en=p.en||(c.roundNo?'ROUND '+c.roundNo:(p.mark||c.title));
+  var season=esc(p.season||'').replace(/(\d{4})/,'<b>$1</b>');
+  var cta=c.status==='open'?'APPLY NOW':c.status==='soon'?'SOON':'CLOSED';
+  return '<div class="poster gen">'+rib+'<span class="dar">DAR<br>DAR<br>DAR</span><span class="dar d2">DAR<br>DAR<br>DAR</span>'+
+    '<img class="pl" src="assets/logo-sm.png" alt="">'+(season?'<div class="season">'+season+'</div>':'')+
+    '<div class="en">'+esc(en)+'</div><div class="ar">'+arNum(c.title)+'</div>'+(p.modeEn?'<div class="md">'+esc(p.modeEn)+'</div>':'')+
+    '<span class="apply">'+cta+'</span><span class="handle">'+esc(S.settings.handle||'@daralkahrabaa')+'</span></div>';
+}
+function card(c){
+  var left=(c.seats||0)-(c.booked||0), hrs=DK.totalHours(c);
+  return '<article class="card"><a href="#course-'+esc(c.id)+'" aria-label="'+esc(L(c,'title'))+'">'+poster(c)+'</a>'+
+    '<div class="card-b"><div><span class="tag '+esc(c.status)+'">'+esc(SL(c.status))+'</span></div>'+
+    '<h3><a href="#course-'+esc(c.id)+'">'+esc(L(c,'title'))+'</a></h3><div class="sub">'+esc(L(c,'subtitle'))+'</div>'+
+    '<div class="facts"><span>'+ic('i-clock')+(c.kind==='program'?esc(L(c,'duration')):hrs+' '+t('training hours','ساعة تدريبية')+' · '+esc(L(c,'duration')))+'</span>'+
+      '<span>'+ic('i-cal')+esc(c.start?t('Starts ','يبدأ ')+fmtDate(c.start):L(c,'schedule'))+'</span>'+
+      (c.seats&&c.status!=='done'?'<span>'+ic('i-users')+(left>0?t(left+' of '+c.seats+' seats left','متبقي '+left+' مكان من '+c.seats):t('Fully booked','اكتمل العدد'))+'</span>':'')+'</div>'+
+    '<div class="card-f"><div class="price">'+(c.price?'<b class="num">'+n(c.price)+'</b><small>'+t('EGP','ج.م')+'</small>'+(c.oldPrice?'<s class="num">'+n(c.oldPrice)+'</s>':''):'<span class="muted" style="font-size:14px">'+(c.status==='soon'?t('Price coming soon','السعر قريباً'):t('Ask on WhatsApp','اسأل على واتساب'))+'</span>')+'</div>'+
+    '<a class="btn btn-o btn-s" href="#course-'+esc(c.id)+'">'+(c.status==='soon'?t('Register interest','سجّل اهتمامك'):t('Details','التفاصيل'))+'</a></div>'+
+    '</div></article>';
+}
+
+/* ---------- home sections ---------- */
+function hero(){
+  var next=live().filter(function(c){return c.status==='open'&&c.start;}).sort(byStart)[0];
+  return '<section class="hero"><div class="wrap"><div>'+
+    '<span class="kicker">'+ic('i-spark')+'<b class="num">+15,000</b> '+t('engineers trained with us','مهندس اتدربوا معانا')+'</span>'+
+    '<h1>'+t('Learn design and execution<br><span class="soft">from engineers on site</span>','اتعلّم التصميم والتنفيذ<br><span class="soft">من مهندسين في الموقع</span>')+'</h1>'+
+    '<p class="lede">'+t('A training center that prepares fresh graduate engineers and final-year students for the job market. Part of Dar Alkahrbaa.','مركز تدريب وتأهيل المهندسين حديثي التخرج وطلاب الفرقة النهائية لسوق العمل، والتابع لشركة دار الكهرباء.')+'</p>'+
+    '<div class="hero-rot"><span>'+t('We train you in','بنعلّمك')+'</span> <b id="heroRot"></b><span class="caret"></span></div>'+
+    '<div class="ctas"><a class="btn btn-p" href="#courses">'+t('See open courses','شوف الكورسات المتاحة')+' '+arrow()+'</a>'+(next?'<a class="btn btn-o" href="#course-'+esc(next.id)+'">'+esc(L(next,'title'))+' — '+t('starts ','يبدأ ')+esc(fmtDate(next.start))+'</a>':'')+'</div>'+
+    '</div><div class="hero-art"><span class="orb"></span><span class="ring r1"></span><span class="ring r2"></span><span class="tri t1"></span><span class="tri t2"></span><span class="tri t3"></span><span class="glow"></span><img src="assets/logo.png" alt="Dar Alkahrbaa Training Center" width="1080" height="1080"></div></div></section>';
+}
+function bannerSec(){
+  return '<section class="bn-sec"><div class="wrap"><figure class="bn"><img src="assets/banner.jpg" alt="'+t('Dar Alkahrbaa Holding and Dar Alkahrbaa Training Center — We build. We train. We lead.','دار الكهرباء القابضة ومركز دار الكهرباء للتدريب — We build. We train. We lead.')+'" width="1242" height="461"></figure></div></section>';
+}
+function catsSec(){
+  return '<section class="sec band"><div class="wrap"><div class="head"><h2>'+t('Choose your track','اختار تخصصك')+'</h2><p>'+t('Each track has core rounds with fixed start dates, specialised rounds and short programmes.','كل قسم فيه راوند أساسي بمواعيد ثابتة، وراوندات متخصصة، وبرامج قصيرة.')+'</p></div><div class="cats">'+
+  S.categories.map(function(c){
+    var l=live().filter(function(x){return x.cat===c.id;});
+    var round=l.filter(function(x){return x.kind==='round';}).sort(byStart)[0];
+    var icm={elec:'i-spark',mech:'i-gear',pm:'i-chart',students:'i-cap'};
+    return '<div class="cat"><span class="cat-ic">'+ic(icm[c.id]||'i-spark')+'</span><h3>'+esc(L(c,'name'))+'</h3><p>'+esc(L(c,'desc'))+'</p><div class="stack">'+
+      (round?'<a class="btn btn-p btn-b" href="#course-'+esc(round.id)+'">'+esc(L(round,'title'))+'</a>':'<a class="btn btn-p btn-b" href="#courses-'+c.id+'">'+t('Available programmes','البرامج المتاحة')+'</a>')+
+      '<a class="btn btn-o btn-b" href="#courses-'+c.id+'">'+t('All ','كل ')+esc(L(c,'name'))+' ('+l.length+')</a>'+
+      '<a class="btn btn-o btn-b" href="#rounds">'+t('Past rounds','الراوندات السابقة')+'</a>'+
+    '</div></div>';
+  }).join('')+'</div></div></section>';
+}
+function openSec(){
+  var list=live().filter(function(c){return c.featured;}).sort(byStart);
+  return '<section class="sec"><div class="wrap"><div class="head"><h2>'+t('Open for registration','مفتوح للتسجيل')+'</h2><p>'+t('Rounds you can join right now.','الراوندات اللي التسجيل فيها شغال دلوقتي.')+'</p></div><div class="grid-c">'+list.map(card).join('')+'</div><div style="text-align:center;margin-top:36px"><a class="btn btn-o" href="#courses">'+t('All courses','كل الكورسات')+'</a></div></div></section>';
+}
+function gallerySec(){
+  var g=S.gallery;if(!g||!g.photos||!g.photos.length)return '';
+  return '<section class="sec band"><div class="wrap"><div class="head"><div class="ws-k" style="text-align:center">MADE IN <b>DAR ALKAHRBAA</b></div><h2>'+esc(L(g,'title'))+'</h2><p>'+esc(L(g,'text'))+'</p></div>'+
+    '<div class="gal">'+g.photos.map(function(p,i){var cap=L(p,'caption');return '<button class="ph'+(i===0?' big':'')+'" data-photo="'+esc(p.src)+'" data-cap="'+esc(cap)+'"><img src="'+esc(p.src)+'" alt="'+esc(cap)+'" loading="'+(i?'lazy':'eager')+'"><span class="cap">'+esc(cap)+'</span></button>';}).join('')+'</div></div></section>';
+}
+function numsSec(){
+  return '<section class="sec band"><div class="wrap"><div class="head"><h2>'+t('Our numbers','أرقامنا')+'</h2><p>'+t('Training without a break, from the first round to today.','تدريب مستمر من الراوند الأول لحد النهارده.')+'</p></div><div class="nums">'+
+  S.settings.counters.map(function(c){return '<div><b class="num" data-count="'+(+c.value||0)+'" data-suf="'+esc(c.suffix)+'">'+n(c.value)+esc(c.suffix)+'</b><span>'+esc(L(c,'label'))+'</span><small>'+esc(L(c,'sub'))+'</small></div>';}).join('')+'</div></div></section>';
+}
+function workshopsSec(){
+  var w=S.workshops;if(!w||!w.rows||!w.rows.length)return '';
+  var mx=Math.max.apply(null,w.rows.map(function(r){return +r.attended||0;}));
+  var total=w.total||w.rows.reduce(function(s,r){return s+(+r.attended||0);},0);
+  var pr=w.presenter||{};var photos=(w.photos||[]).slice(0,6);
+  return '<section class="sec"><div class="wrap"><div class="ws"><div><div class="ws-k">EGYPTIAN UNIVERSITIES WORKSHOPS <b>'+esc((w.season||'').toUpperCase())+'</b></div><h2>'+esc(L(w,'title'))+'</h2><p>'+esc(L(w,'intro'))+'</p>'+
+    '<ol class="ws-list">'+w.rows.map(function(r,i){return '<li>'+(r.logo?'<img class="uni" src="'+esc(r.logo)+'" alt="" loading="lazy">':'<span class="rk">#'+(i+1)+'</span>')+'<span class="nm">'+esc(L(r,'name'))+(r.date?'<small>'+esc(L(r,'date'))+'</small>':'')+'<span class="bar"><i style="width:'+Math.round((+r.attended||0)/mx*100)+'%;animation-delay:'+(i*80)+'ms"></i></span></span><span class="at num">'+n(r.attended)+'</span></li>';}).join('')+'</ol></div>'+
+    '<div class="person">'+(pr.photo?'<img src="'+esc(pr.photo)+'" alt="'+esc(L(pr,'name'))+'" loading="lazy">':'')+'<b>'+esc(L(pr,'name'))+'</b><small>'+esc(L(pr,'role'))+'</small><div class="tot">TOTAL ATTENDEES <span class="num" data-count="'+total+'" data-suf="">'+n(total)+'</span></div></div></div>'+
+    (photos.length?'<div class="ws-photos">'+photos.map(function(p){return '<button class="ph" data-photo="'+esc(p)+'" aria-label="'+t('Open photo','عرض الصورة')+'"><img src="'+esc(p)+'" alt="" loading="lazy"></button>';}).join('')+'</div>':'')+
+  '</div></section>';
+}
+function revHTML(r){return '<figure class="rev'+(r.stars?'':' fb')+'">'+(r.stars?stars(r.stars):'<span class="q">“</span>')+'<p>'+esc(L(r,'text'))+'</p><figcaption class="who"><span class="av">'+esc(initials(L(r,'name')))+'</span><span><b>'+esc(L(r,'name'))+'</b><small>'+esc(L(r,'role'))+'</small></span></figcaption></figure>';}
+function reviewsSec(){
+  var list=S.reviews.filter(function(r){return r.visible!==false;}).slice(0,3);
+  return '<section class="sec band"><div class="wrap"><div class="head"><h2>'+t('What they say','رأيهم فينا')+'</h2><p>'+t('Words from students and engineers after the workshops and rounds.','كلام الطلبة والمهندسين بعد الورش والراوندات، زي ما كتبوه.')+'</p></div><div class="reviews">'+list.map(revHTML).join('')+
+  '</div><div style="text-align:center;margin-top:36px"><a class="btn btn-o" href="#reviews">'+t('All feedback','كل الآراء')+'</a></div></div></section>';
+}
+function whySec(){
+  var w=[[t('A real project every round','مشروع حقيقي في كل راوند'),t('Drawings, specifications and BOQs from projects that were actually built.','مخططات ومواصفات وجداول كميات من مشاريع اتنفذت فعلاً.'),'i-site'],
+    [t('Instructors from the field','محاضرين شغالين في السوق'),t('Led by Eng. Hamdy Abdelrasoul, CEO of Dar Alkahrbaa.','بقيادة م. حمدي عبد الرسول، المدير التنفيذي لدار الكهرباء.'),'i-users'],
+    [t('Support until you submit','متابعة لحد التسليم'),t('A follow-up group and project reviews, with recorded lectures for life.','جروب متابعة ومراجعة لمشروعك، والمحاضرات متسجلة مدى الحياة.'),'i-rec'],
+    [t('A certificate that counts','شهادة ليها قيمة'),t('From Dar Alkahrbaa, accreditable by the Engineers Syndicate.','من دار الكهرباء، وقابلة للاعتماد من نقابة المهندسين.'),'i-badge']];
+  return '<section class="sec"><div class="wrap"><div class="head"><h2>'+t('Why Dar Alkahrbaa?','ليه دار الكهرباء؟')+'</h2></div><div class="why">'+w.map(function(x){return '<div><span class="wic">'+ic(x[2])+'</span><h4>'+x[0]+'</h4><p>'+x[1]+'</p></div>';}).join('')+'</div></div></section>';
+}
+function historyTable(rows){
+  return '<div class="tbl-wrap"><table><thead><tr><th>'+t('Round','الراوند')+'</th><th>'+t('Track','القسم')+'</th><th>'+t('Year','السنة')+'</th><th>'+t('Format','طريقة الحضور')+'</th><th>'+t('Graduates','عدد الخريجين')+'</th></tr></thead><tbody>'+
+  rows.map(function(a){return '<tr><td>'+t('Round ','راوند ')+a.no+'</td><td>'+esc(L(cat(a.cat),'name'))+'</td><td class="num">'+a.year+'</td><td>'+esc(L(a,'mode'))+'</td><td class="num"><b>'+a.graduates+'</b></td></tr>';}).join('')+'</tbody></table></div>';
+}
+function historySec(){
+  return '<section class="sec band"><div class="wrap"><div class="head"><h2>'+t('Training history','تاريخ التدريب')+'</h2><p>'+t('Round after round, thousands of engineers graduated. Here are the latest.','راوند ورا راوند، وآلاف المهندسين اتخرّجوا. دي آخر الراوندات.')+'</p></div>'+dashTiles()+'<div class="rc-grid" style="margin-top:24px">'+(S.showcase||[]).slice(0,3).map(rcCard).join('')+'</div><div style="text-align:center;margin-top:32px"><a class="btn btn-o" href="#rounds">'+t('All past rounds','كل الراوندات السابقة')+'</a></div></div></section>';
+}
+function partnersSec(){
+  var x=S.partners.map(function(p){return '<div>'+(p.logo?'<img src="'+esc(p.logo)+'" alt="'+esc(L(p,'name'))+'">':esc(L(p,'name')))+'</div>';}).join('');
+  return '<section class="sec"><div class="wrap"><div class="head"><h2>'+t('Dar Alkahrbaa Holding clients','عملاء دار الكهرباء القابضة')+'</h2><p>'+t('Companies and institutions we have delivered projects for. What we teach in the rounds comes from these projects.','شركات ومؤسسات نفّذنا معاها مشاريع، ومنها بييجي المحتوى اللي بنعلّمه في الراوندات.')+'</p></div></div><div class="marquee"><div class="mtrack">'+x+x+'</div></div></section>';
+}
+function faqList(){return '<div class="faq">'+S.faq.map(function(f){return '<details class="qa"><summary>'+esc(L(f,'q'))+ic('i-down')+'</summary><p>'+esc(L(f,'a'))+'</p></details>';}).join('')+'</div>';}
+function faqSec(){return '<section class="sec band"><div class="wrap"><div class="head"><h2>'+t('Frequently asked questions','الأسئلة الشائعة')+'</h2></div>'+faqList()+'</div></section>';}
+function crumbs(label,mid){return '<div class="crumbs"><a href="#home">'+t('Home','الرئيسية')+'</a>/'+(mid||'')+'<span>'+label+'</span></div>';}
+
+/* ---------- pages ---------- */
+function gradSec(){
+  var ph=[
+    ['assets/grad-group.jpg',t('Graduation ceremony — the latest round','حفل تخرج متدربي دار الكهرباء')],
+    ['assets/grad-welcome.jpg',t('Welcome to our graduation','أهلاً بكم في حفل التخرج')],
+    ['assets/grad-speaker.jpg',t('Eng. Hamdy Abdelrasoul','م. حمدي عبد الرسول')],
+    ['assets/grad-hall.jpg',t('Hundreds of graduates every round','مئات الخريجين في كل راوند')]
+  ];
+  return '<section class="sec"><div class="wrap"><div class="head"><div class="ws-k" style="text-align:center">MADE IN <b>DAR ALKAHRBAA</b></div><h2>'+t('Straight from our graduation','من حفل تخرج متدربينا')+'</h2><p>'+t('Every round ends with a real graduation ceremony. These are from the latest one.','كل راوند بيخلص بحفل تخرج حقيقي. دي صور من آخر حفلة.')+'</p></div><div class="gal">'+ph.map(function(p,i){return '<button class="ph'+(i===0?' big':'')+'" data-photo="'+esc(p[0])+'" data-cap="'+esc(p[1])+'"><img src="'+esc(p[0])+'" alt="'+esc(p[1])+'" loading="'+(i?'lazy':'eager')+'"><span class="cap">'+esc(p[1])+'</span></button>';}).join('')+'</div></div></section>';
+}
+function employersSec(){
+  var e=S.employers||[];if(!e.length)return '';
+  return '<section class="sec band"><div class="wrap"><div class="head"><h2>'+t('Where our graduates work','متدربينا بيشتغلوا فين')+'</h2><p>'+t('Our graduates work across Egypt’s biggest electrical factories and firms — Elsewedy, Schneider Electric, ABB and many more.','خريجينا بيشتغلوا في أكبر مصانع وشركات الكهرباء في مصر — السويدي وشنايدر وABB وغيرهم كتير.')+'</p></div><div class="partners">'+e.map(function(x){return '<div>'+esc(L(x,'name'))+'</div>';}).join('')+'</div></div></section>';
+}
+function pageHome(){return hero()+openSec()+catsSec()+numsSec()+workshopsSec()+reviewsSec()+whySec()+gradSec()+historySec()+employersSec()+faqSec();}
+var F={cat:'all',kind:'all',mode:'all',q:''};
+function pageCourses(){
+  var c=cat(F.cat);
+  return '<section class="phead"><div class="wrap">'+crumbs(t('Courses','الكورسات'))+'<h1 id="cTitle">'+(F.cat==='all'?t('All courses','كل الكورسات'):esc(L(c,'name')))+'</h1><p>'+(F.cat==='all'?t('Rounds, courses and initiatives available at Dar Alkahrbaa.','الراوندات والكورسات والمبادرات المتاحة في دار الكهرباء.'):esc(L(c,'desc')))+'</p></div></section>'+
+  '<section style="padding-bottom:88px"><div class="wrap"><div class="filters"><div class="pills" id="catPills"><button data-v="all">'+t('All','الكل')+'</button>'+S.categories.map(function(x){return '<button data-v="'+x.id+'">'+esc(L(x,'name'))+'</button>';}).join('')+'</div>'+
+  '<select id="fKind" aria-label="'+t('Type','النوع')+'"><option value="all">'+t('All types','كل الأنواع')+'</option><option value="round">'+t('Rounds','راوندات')+'</option><option value="program">'+t('Initiatives','مبادرات')+'</option><option value="course">'+t('Courses','كورسات')+'</option></select>'+
+  '<select id="fMode" aria-label="'+t('Format','طريقة الحضور')+'"><option value="all">'+t('Any format','أي طريقة')+'</option><option value="حضوري">'+ML('حضوري')+'</option><option value="أونلاين مباشر">'+ML('أونلاين مباشر')+'</option><option value="فيديوهات مسجلة">'+ML('فيديوهات مسجلة')+'</option></select>'+
+  '<label class="search">'+ic('i-search')+'<input id="q" type="search" placeholder="'+t('Search courses','ابحث عن كورس')+'" value="'+esc(F.q)+'"></label></div><div id="cgrid"></div></div></section>';
+}
+function renderGrid(){
+  var g=document.getElementById('cgrid');if(!g)return;
+  var q=F.q.toLowerCase();
+  var list=S.courses.filter(function(c){
+    if(c.hidden)return false;
+    if(F.cat!=='all'&&c.cat!==F.cat)return false;
+    if(F.kind!=='all'&&c.kind!==F.kind)return false;
+    if(F.mode!=='all'&&(c.mode||[]).indexOf(F.mode)<0)return false;
+    if(q&&[c.title,c.subtitle,c.summary,c.title_en,c.subtitle_en,c.summary_en].join(' ').toLowerCase().indexOf(q)<0)return false;
+    return true;
+  }).sort(function(a,b){var o={open:0,soon:1,closed:2,done:3};return (o[a.status]-o[b.status])||byStart(a,b);});
+  g.innerHTML=list.length?'<div class="grid-c">'+list.map(card).join('')+'</div>':'<div class="empty">'+t('No courses match these filters. Change them or ask us on WhatsApp.','مفيش كورسات بالاختيارات دي. غيّر الفلتر أو اسألنا على واتساب.')+'</div>';
+  document.querySelectorAll('#catPills button').forEach(function(b){b.classList.toggle('on',b.getAttribute('data-v')===F.cat);});
+  var k=document.getElementById('fKind'),m=document.getElementById('fMode');if(k)k.value=F.kind;if(m)m.value=F.mode;
+}
+function pageCourse(id){
+  var c=course(id);
+  if(!c)return '<section class="phead"><div class="wrap"><h1>'+t("This course doesn't exist",'الكورس ده مش موجود')+'</h1><p><a href="#courses" style="text-decoration:underline">'+t('Back to all courses','ارجع لكل الكورسات')+'</a></p></div></section>';
+  var hrs=DK.totalHours(c), left=c.seats-c.booked, open=c.status==='open'||c.status==='soon';
+  var pal=['#262A5C','#F2B705','#4A5490','#C9CBE0','#8A6200','#2F3672','#E6D28C','#6E7080'];
+  var related=live().filter(function(x){return x.cat===c.cat&&x.id!==c.id;}).slice(0,3);
+  var outs=OUT(c)||[];
+  return '<section class="phead" style="padding-bottom:12px"><div class="wrap">'+crumbs(esc(L(c,'title')),'<a href="#courses-'+c.cat+'">'+esc(L(cat(c.cat),'name'))+'</a>/')+'</div></section>'+
+  '<section style="padding-bottom:88px"><div class="wrap cd"><div style="min-width:0">'+
+    '<span class="tag '+esc(c.status)+'">'+esc(SL(c.status))+'</span>'+
+    '<h1 style="margin-top:14px">'+esc(L(c,'title'))+'</h1><p class="muted" style="font-size:18px;margin-top:4px">'+esc(L(c,'subtitle'))+'</p><p class="lead">'+esc(L(c,'summary'))+'</p>'+
+    '<p class="muted" style="margin-top:14px;font-size:14.5px">'+t('Instructor: ','المحاضر: ')+'<b style="color:var(--ink)">'+esc(L(c,'instructor'))+'</b> · '+esc(L(c,'schedule'))+'</p>'+
+    '<h2>'+t('Content and hours','المحتوى وتقسيم الساعات')+'</h2>'+
+    '<div class="mods">'+c.modules.map(function(m,i){return '<div class="mod"><i style="background:'+pal[i%pal.length]+'"></i><span>'+esc(L(m,'name'))+'</span><span class="h num">'+m.hours+' '+t('hrs','ساعة')+'</span></div>';}).join('')+'<div class="tot"><span>'+t('Total','الإجمالي')+'</span><span class="num">'+hrs+' '+t('hours','ساعة')+'</span></div></div>'+
+    '<div class="hrsbar" style="margin-top:14px" role="img" aria-label="hours">'+c.modules.map(function(m,i){return '<i style="flex:'+(+m.hours||0)+';background:'+pal[i%pal.length]+'"></i>';}).join('')+'</div>'+
+    (outs.length?'<h2>'+t("What you'll walk away with",'هتطلع من الكورس بـ')+'</h2><ul class="outs">'+outs.map(function(o){return '<li>'+ic('i-check')+esc(o)+'</li>';}).join('')+'</ul>':'')+
+    (open?'<h2 id="reg">'+(c.status==='soon'?t('Register your interest','سجّل اهتمامك'):t('Register','التسجيل'))+'</h2><div class="box">'+regForm(c.id)+'</div>':'')+
+    (related.length?'<h2>'+t('More in ','كورسات تانية في ')+esc(L(cat(c.cat),'name'))+'</h2><div class="grid-c">'+related.map(card).join('')+'</div>':'')+
+  '</div><aside class="cd-side">'+poster(c)+
+    '<div class="box"><div class="price" style="display:flex;align-items:baseline;gap:8px;margin-bottom:16px">'+(c.price?'<b class="num" style="font-size:28px">'+n(c.price)+'</b><small>'+t('EGP','ج.م')+'</small>'+(c.oldPrice?'<s class="num" style="display:inline">'+n(c.oldPrice)+'</s>':''):'<b style="font-size:18px">'+(c.status==='soon'?t('Price announced soon','السعر هيتعلن قريباً'):t('Ask on WhatsApp','اسأل على واتساب'))+'</b>')+'</div>'+
+    '<dl class="kv">'+(c.kind!=='program'?'<dt>'+t('Hours','الساعات')+'</dt><dd class="num">'+hrs+'</dd>':'')+'<dt>'+t('Start','البداية')+'</dt><dd>'+esc(c.start?fmtDate(c.start):L(c,'schedule'))+'</dd><dt>'+t('Duration','المدة')+'</dt><dd>'+esc(L(c,'duration'))+'</dd><dt>'+t('Format','الحضور')+'</dt><dd>'+esc(c.mode.map(ML).join(' + '))+'</dd>'+(c.seats?'<dt>'+t('Seats','الأماكن')+'</dt><dd>'+(left>0?t(left+' of '+c.seats+' left','متبقي '+left+' من '+c.seats):t('Full','مكتمل'))+'</dd>':'')+'</dl>'+
+    (open?'<a class="btn btn-p btn-b" href="#reg" data-scroll="reg">'+(c.status==='soon'?t('Register interest','سجّل اهتمامك'):t('Register now','سجّل الآن'))+'</a>':'')+
+    '<button class="btn btn-o btn-b" style="margin-top:10px" data-open-wa="'+esc(t('a question about ','استفسار عن ')+L(c,'title'))+'">'+waIcon()+t('Ask on WhatsApp','استفسر على واتساب')+'</button></div>'+
+  '</aside></div></section>';
+}
+function rcCard(r){
+  var tot=(+r.elec+ +r.mech)||+r.grads||1;
+  return '<article class="rc"><div class="rc-ph"><img src="'+esc(r.photo)+'" alt="Round '+esc(r.no)+'" loading="lazy">'+
+    '<span class="rc-rate"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg> '+(+r.rating).toFixed(1)+'</span>'+
+    (r.year?'<span class="rc-yr">'+esc(r.year)+'</span>':'')+'<span class="rc-no">ROUND '+esc(r.no)+'</span></div>'+
+    '<div class="rc-b"><div class="rc-grad"><b class="num">'+n(r.grads)+'</b><span>'+t('graduate engineers','مهندس خريج')+'</span></div>'+
+    '<div class="rc-bar"><i style="width:'+Math.round((+r.elec||0)/tot*100)+'%"></i></div>'+
+    '<div class="rc-leg"><span><i class="e"></i>'+t('Electrical','كهرباء')+' '+n(r.elec)+'</span><span><i class="m"></i>'+t('Mechanical','ميكانيكا')+' '+n(r.mech)+'</span></div>'+
+    '</div></article>';
+}
+function dashStats(){
+  var sc=S.showcase||[],g=0,e=0,m=0,r=0;
+  sc.forEach(function(x){g+=+x.grads||0;e+=+x.elec||0;m+=+x.mech||0;r+=+x.rating||0;});
+  return {sc:sc,g:g,e:e,m:m,avg:sc.length?r/sc.length:0};
+}
+function dashTiles(){
+  var d=dashStats();if(!d.sc.length)return '';
+  function tile(v,l){return '<div class="tile"><b class="num">'+v+'</b><span>'+l+'</span></div>';}
+  return '<div class="dash-tiles">'+tile('+'+n(d.g),t('graduates','خريج'))+tile(d.sc.length,t('rounds shown','راوند'))+tile('+'+n(d.e),t('electrical','كهرباء'))+tile('+'+n(d.m),t('mechanical','ميكانيكا'))+tile(d.avg.toFixed(1)+'★',t('avg rating','متوسط التقييم'))+'</div>';
+}
+function roundsDash(){
+  var d=dashStats();if(!d.sc.length)return '';
+  var mx=Math.max.apply(null,d.sc.map(function(r){return +r.grads||0;}))||1;
+  var chrono=d.sc.slice().sort(function(a,b){return a.no-b.no;});
+  var ePct=Math.round(d.e/((d.e+d.m)||1)*100),mPct=100-ePct;
+  return '<div class="dash">'+dashTiles()+'<div class="dash-panels">'+
+    '<div class="dash-card"><h4>'+t('Graduates per round','خريجين كل راوند')+'</h4><div class="bars">'+chrono.map(function(r){return '<div class="bar"><span class="bv">'+n(r.grads)+'</span><i style="height:'+Math.round((+r.grads||0)/mx*100)+'%"></i><span class="bl">R'+esc(r.no)+'</span></div>';}).join('')+'</div></div>'+
+    '<div class="dash-card"><h4>'+t('Electrical vs Mechanical','التوزيع على التخصصات')+'</h4><div class="splitv"><div class="split-bar"><i class="e" style="width:'+ePct+'%"></i><i class="m" style="width:'+mPct+'%"></i></div><div class="split-leg"><div><span><span class="dot e"></span>'+t('Electrical','كهرباء')+'</span><b class="num">'+n(d.e)+' · '+ePct+'%</b></div><div><span><span class="dot m"></span>'+t('Mechanical','ميكانيكا')+'</span><b class="num">'+n(d.m)+' · '+mPct+'%</b></div></div></div></div>'+
+    '</div></div>';
+}
+function showcaseGrid(){
+  var sc=S.showcase||[];if(!sc.length)return '';
+  return '<div class="rc-grid">'+sc.map(rcCard).join('')+'</div>';
+}
+function pageRounds(){
+  return '<section class="phead"><div class="wrap">'+crumbs(t('Past rounds','الراوندات السابقة'))+'<h1>'+t('Past rounds','الراوندات السابقة')+'</h1><p>'+t('Every round that graduated from Dar Alkahrbaa — the numbers, the tracks and the teams behind them.','كل راوند اتخرّج من دار الكهرباء — الأرقام والتخصصات والدفعات اللي طلعت منه.')+'</p></div></section>'+
+  '<section class="sec"><div class="wrap">'+roundsDash()+'<div class="head" style="margin-top:4px"><h2>'+t('Round by round','راوند راوند')+'</h2><p>'+t('From Round 17 to Round 24 — sample numbers and team photos until the academy’s real data is in.','من راوند 17 لحد راوند 24 — أرقام وصور تجريبية لحد ما تتحط داتا الأكاديمية الأصلية.')+'</p></div>'+showcaseGrid()+'</div></section>'+gallerySec();
+}
+function pageReviews(){
+  var list=S.reviews.filter(function(r){return r.visible!==false;});
+  return '<section class="phead"><div class="wrap">'+crumbs(t('Feedback','الآراء'))+'<h1>'+t('Student and trainee feedback','آراء الطلبة والمتدربين')+'</h1></div></section><section style="padding-bottom:88px"><div class="wrap"><div class="reviews">'+list.map(revHTML).join('')+'</div></div></section>';
+}
+function pageAbout(){
+  return '<section class="phead"><div class="wrap">'+crumbs(t('About','عن المركز'))+'<h1>'+t('About the center','عن المركز')+'</h1><p>'+t('Dar Alkahrbaa Training Center prepares fresh graduate engineers and final-year students for the job market. Dar Alkahrbaa is an electromechanical contracting company, and the training academy comes out of the same sites. Instructors are working engineers, and the projects you train on were actually built.','مركز دار الكهرباء للتدريب بيأهّل المهندسين حديثي التخرج وطلاب الفرقة النهائية لسوق العمل. دار الكهرباء شركة مقاولات كهروميكانيك، والمركز بيطلع من نفس المواقع. المحاضرين مهندسين شغالين، والمشاريع اللي بتتدرب عليها مشاريع اتنفذت فعلاً.')+'</p><div style="margin-top:24px"><a class="btn btn-o" href="'+esc(S.settings.contractingUrl)+'" target="_blank" rel="noopener">'+t('Dar Alkahrbaa Contracting website','موقع دار الكهرباء للمقاولات')+' '+ic('i-ext')+'</a></div></div></section>'+bannerSec()+gallerySec()+whySec()+numsSec()+workshopsSec()+partnersSec();
+}
+function pageFaq(){return '<section class="phead"><div class="wrap">'+crumbs(t('FAQ','الأسئلة الشائعة'))+'<h1>'+t('Frequently asked questions','الأسئلة الشائعة')+'</h1><p>'+t("If your question isn't here, send it to us on WhatsApp.",'لو سؤالك مش هنا، ابعتهولنا على واتساب.')+'</p></div></section><section style="padding-bottom:88px"><div class="wrap">'+faqList()+'</div></section>';}
+function pageContact(){
+  var s=S.settings;
+  return '<section class="phead"><div class="wrap">'+crumbs(t('Contact','تواصل معنا'))+'<h1>'+t('Contact us','تواصل معنا')+'</h1><p>'+t("Send your details and we'll call you within 24 hours, or message us on WhatsApp.",'ابعت بياناتك وهنكلمك خلال 24 ساعة، أو كلمنا على واتساب.')+'</p></div></section>'+
+  '<section style="padding-bottom:88px"><div class="wrap cd" style="grid-template-columns:1.3fr 1fr"><div class="box">'+regForm('')+'</div>'+
+  '<div class="box"><dl class="kv"><dt>WhatsApp</dt><dd class="num" style="user-select:all">'+esc(s.whatsappLabel)+'</dd><dt>'+t('Phone','تليفون')+'</dt><dd class="num" style="user-select:all">'+esc(s.phone)+'</dd><dt>'+t('Email','البريد')+'</dt><dd style="user-select:all">'+esc(s.email)+'</dd><dt>'+t('Address','العنوان')+'</dt><dd>'+esc(L(s,'address'))+'</dd></dl><button class="btn btn-wa btn-b" data-open-wa>'+waIcon(20)+t('Message us on WhatsApp','كلمنا على واتساب')+'</button></div></div></section>';
+}
+function regForm(cid){
+  var opts=live().map(function(c){return '<option value="'+esc(c.id)+'"'+(c.id===cid?' selected':'')+'>'+esc(L(c,'title'))+'</option>';}).join('');
+  return '<form class="reg" style="display:flex;flex-direction:column;gap:14px"><h3 style="font-size:20px">'+t('Registration request','طلب تسجيل')+'</h3>'+
+    '<div class="fgrid"><label class="field">'+t('Name','الاسم')+'<input id="rgName" required value="'+(user?esc(user.name):'')+'"></label><label class="field">'+t('Mobile (WhatsApp)','رقم الموبايل (واتساب)')+'<input id="rgPhone" required inputmode="tel" pattern="[0-9+ ]{8,}" placeholder="01xxxxxxxxx"></label></div>'+
+    '<div class="fgrid"><label class="field">'+t('Programme','البرنامج')+'<select id="rgCourse">'+opts+'</select></label><label class="field">'+t('Format','طريقة الحضور')+'<select id="rgMode"><option value="حضوري">'+ML('حضوري')+'</option><option value="أونلاين مباشر">'+ML('أونلاين مباشر')+'</option><option value="فيديوهات مسجلة">'+ML('فيديوهات مسجلة')+'</option></select></label></div>'+
+    '<label class="field">'+t('Notes (optional)','ملاحظات (اختياري)')+'<textarea id="rgNote" placeholder="'+t('Graduation year, experience, any question','سنة التخرج، خبرتك، أي سؤال')+'"></textarea></label>'+
+    '<button class="btn btn-p" type="submit">'+t('Send request','إرسال الطلب')+'</button><div class="rg-ok"></div></form>';
+}
+
+/* ---------- router ---------- */
+function route(keepScroll){
+  var h=(location.hash||'#home').slice(1), html, r='';
+  if(h.indexOf('course-')===0){html=pageCourse(h.slice(7));r='courses';}
+  else if(h.indexOf('courses')===0){F.cat=h.split('-')[1]||'all';html=pageCourses();r='courses';}
+  else if(h==='rounds'){html=pageRounds();r='rounds';}
+  else if(h==='reviews'){html=pageReviews();}
+  else if(h==='about'){html=pageAbout();r='about';}
+  else if(h==='faq'){html=pageFaq();r='faq';}
+  else if(h==='contact'){html=pageContact();r='contact';}
+  else html=pageHome();
+  VIEW.innerHTML=html;
+  document.querySelectorAll('#nav a').forEach(function(a){a.classList.toggle('on',a.getAttribute('data-r')===r);});
+  if(h.indexOf('courses')===0)renderGrid();
+  heroRotate();
+  motion(keepScroll);
+}
+window.addEventListener('hashchange',function(){closeAll();var d=document.querySelector('.drawer');if(d)d.remove();route();window.scrollTo(0,0);});
+
+/* ---------- header, footer, popups ---------- */
+function navLinks(){return '<a href="#courses" data-r="courses">'+t('Courses','الكورسات')+'</a><a href="#rounds" data-r="rounds">'+t('Past rounds','الراوندات السابقة')+'</a><a href="#about" data-r="about">'+t('About','عن المركز')+'</a><a href="#faq" data-r="faq">'+t('FAQ','الأسئلة الشائعة')+'</a><a href="#contact" data-r="contact">'+t('Contact','تواصل معنا')+'</a>';}
+function brandHTML(){return '<img class="logo" src="assets/logo-sm.png" alt="Dar Alkahrbaa" width="58" height="56"><span><b>'+t('Dar Alkahrbaa','دار الكهرباء')+'</b><small>'+t('Training Center','مركز التدريب')+'</small></span>';}
+function chrome(){
+  var s=S.settings, ann=document.getElementById('ann'), A=L(s,'announcement');
+  ann.hidden=!A;ann.innerHTML='<div class="wrap"><span class="ann-dot" aria-hidden="true"></span><span class="ann-tag">'+t('NEW','جديد')+'</span><span class="ann-txt">'+esc(A)+'</span><a class="ann-cta" href="#courses">'+t('Register now →','سجّل دلوقتي ←')+'</a></div>';
+  document.getElementById('brandTop').innerHTML=brandHTML();
+  document.getElementById('nav').innerHTML=navLinks();
+  document.getElementById('langBtn').innerHTML=ic('i-globe')+'<span class="lf">'+t('عربي','English')+'</span><span class="ls">'+t('ع','EN')+'</span>';document.getElementById('langBtn').setAttribute('aria-label',t('Switch to Arabic','التحويل للإنجليزية'));
+  document.getElementById('langBtn').setAttribute('lang',LANG==='ar'?'en':'ar');
+  document.getElementById('hdrWa').innerHTML=waIcon()+t('WhatsApp','واتساب');
+  var us=document.getElementById('userSlot');
+  us.innerHTML=!s.googleLogin?'':user?'<button class="btn btn-o btn-s" id="logout" title="'+t('Sign out','تسجيل الخروج')+'"><span class="av" style="width:26px;height:26px;font-size:11px">'+esc(initials(user.name))+'</span><span class="hide-m">'+t('My account','حسابي')+'</span></button>':'<button class="btn btn-o btn-s" id="login">'+ic('i-user')+'<span class="hide-m">'+t('Sign in','دخول')+'</span></button>';
+  document.getElementById('ftr').innerHTML='<div class="ftr-g"><div><a class="brand" href="#home">'+brandHTML()+'</a><p class="muted" style="margin-top:14px;font-size:14.5px;max-width:34ch">'+t('Hands-on training for engineers and engineering students.','تدريب عملي للمهندسين وطلبة الهندسة.')+'</p><div class="holding"><img src="assets/holding.jpg" alt="Dar Alkahrbaa Holding">'+t('Part of Dar Alkahrbaa Holding','جزء من دار الكهرباء القابضة')+'</div>'+
+    '<div class="social" style="justify-content:flex-start"><a href="'+esc(s.facebook||'#')+'" target="_blank" rel="noopener" aria-label="Facebook">f</a><a href="'+esc(s.instagram||'#')+'" target="_blank" rel="noopener" aria-label="Instagram">ig</a><a href="'+esc(s.linkedin||'#')+'" target="_blank" rel="noopener" aria-label="LinkedIn">in</a><span class="muted" style="align-self:center;font-size:13px">'+esc(s.handle||'')+'</span></div></div>'+
+    '<div><h5>'+t('Training','التدريب')+'</h5>'+S.categories.map(function(c){return '<a href="#courses-'+c.id+'">'+esc(L(c,'name'))+'</a>';}).join('')+'<a href="#rounds">'+t('Past rounds','الراوندات السابقة')+'</a></div>'+
+    '<div><h5>'+t('Training Center','المركز')+'</h5><a href="#about">'+t('About','عن المركز')+'</a><a href="#faq">'+t('FAQ','الأسئلة الشائعة')+'</a><a href="#contact">'+t('Contact','تواصل معنا')+'</a><a href="'+esc(s.contractingUrl||'#')+'" target="_blank" rel="noopener">'+t('Dar Alkahrbaa Contracting','دار الكهرباء للمقاولات')+'</a></div>'+
+    '<div><h5>'+t('Contact','تواصل')+'</h5><a class="num" href="#contact">'+esc(s.phone)+'</a><a href="#contact">'+esc(s.email)+'</a><a href="#contact">'+esc(L(s,'address'))+'</a></div></div>'+
+    '<div class="note"><span>© 2026 '+t('Dar Alkahrbaa Training Center','مركز دار الكهرباء للتدريب')+'</span><span>'+t('Concept version with sample data','نسخة تصورية ببيانات تجريبية')+' · <a href="admin.html" target="_blank" rel="noopener" style="display:inline;text-decoration:underline">'+t('Admin panel','لوحة التحكم')+'</a></span></div>';
+  var topics=[t('I want to join a round','عايز أسجل في راوند'),t('Dates and schedule','استفسار عن المواعيد'),t('Prices and instalments','الأسعار والتقسيط'),t('Recorded videos','الفيديوهات المسجلة')];
+  document.getElementById('popWa').innerHTML='<div class="pop-h"><span><b>'+t('Dar Alkahrbaa team','فريق دار الكهرباء')+'</b><small>'+t('Usually replies within minutes','بنرد عادةً خلال دقائق')+'</small></span><button class="x" data-close="popWa" aria-label="Close">'+ic('i-x')+'</button></div>'+
+    '<div class="pop-b"><div class="msg bot">'+t("Hi! Pick a topic and we'll continue with you on WhatsApp.",'أهلاً يا بشمهندس. اختار موضوع رسالتك وهنكمل معاك على واتساب.')+'</div><div class="chips">'+topics.map(function(x){return '<button data-wa-topic="'+esc(x)+'">'+esc(x)+'</button>';}).join('')+'</div></div>'+
+    '<div class="pop-f"><a class="btn btn-wa" id="waGo" href="'+esc(waLink(hello()+topics[0]))+'" target="_blank" rel="noopener">'+t('Start the chat on WhatsApp','ابدأ المحادثة على واتساب')+'</a><div class="wa-num"><span>'+t('Or call','أو كلمنا على')+'</span><span class="num" style="user-select:all">'+esc(s.whatsappLabel)+'</span></div></div>';
+  document.getElementById('aiHead').innerHTML='<span class="ai-ava" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" style="width:21px;height:21px"><use href="#i-ai"/></svg></span><span><b>DK AI Assistant</b><small>'+t('Pick a question, or set your track and level','اختار سؤال أو حدد تخصصك ومستواك')+'</small></span><button class="x" data-close="popAi" aria-label="Close">'+ic('i-x')+'</button>';
+  document.getElementById('aiSpec').innerHTML=S.categories.map(function(c){return '<option value="'+c.id+'">'+esc(L(c,'name'))+'</option>';}).join('');
+  document.getElementById('aiLevel').innerHTML='<option value="beginner">'+t('Fresh graduate / student','حديث تخرج / طالب')+'</option><option value="mid">'+t('I have experience','عندي خبرة')+'</option>';
+  document.getElementById('aiMode').innerHTML='<option value="">'+t('Any format','أي طريقة')+'</option><option value="حضوري">'+ML('حضوري')+'</option><option value="أونلاين مباشر">'+ML('أونلاين مباشر')+'</option><option value="فيديوهات مسجلة">'+ML('فيديوهات مسجلة')+'</option>';
+  document.getElementById('aiGo').textContent=t('Show matching courses','اعرض الكورسات المناسبة');
+  document.getElementById('aiBody').innerHTML='';
+}
+function closeAll(){document.getElementById('popWa').hidden=true;document.getElementById('popAi').hidden=true;document.getElementById('modalRoot').innerHTML='';}
+function openWa(topic){closeAll();document.getElementById('popWa').hidden=false;if(topic)document.getElementById('waGo').href=waLink(hello()+topic);}
+function openAi(){closeAll();document.getElementById('popAi').hidden=false;if(!document.getElementById('aiBody').children.length)aiIntro();}
+
+/* course helper: ready questions + 3 choices, answers come from the catalog */
+function aiSay(html,me){var b=document.getElementById('aiBody'),d=document.createElement('div');d.className='msg '+(me?'me':'bot');d.innerHTML=html;b.appendChild(d);b.scrollTop=b.scrollHeight;}
+function aiChips(){var b=document.getElementById('aiBody'),d=document.createElement('div');d.className='chips';d.innerHTML=S.settings.aiPresets.map(function(p){return '<button data-ai="'+esc(p.id)+'">'+esc(L(p,'q'))+'</button>';}).join('');b.appendChild(d);b.scrollTop=b.scrollHeight;}
+function aiIntro(){aiSay(t("Hi! Pick a question, or set your track and level below and we'll show the courses that fit.",'أهلاً يا بشمهندس. اختار سؤال، أو حدد تخصصك ومستواك تحت ونطلعلك الكورسات المناسبة.'));aiChips();}
+function mini(c){return '<a class="mini" href="#course-'+esc(c.id)+'">'+(c.image?'<i style="background:#fff url('+esc(c.image)+') center/cover"></i>':'<i style="background:'+esc(c.poster.a)+';color:'+esc(c.poster.b)+'">'+esc(c.poster.mark)+'</i>')+'<span><b>'+esc(L(c,'title'))+'</b><small>'+esc(c.start?fmtDate(c.start):L(c,'schedule'))+'</small></span></a>';}
+function recommend(tags,mode){
+  var l=live();
+  if(tags.indexOf('next')>-1)return l.filter(function(c){return c.start||c.status==='soon';}).sort(byStart).slice(0,3);
+  return l.map(function(c){var s=0;tags.forEach(function(x){if(c.cat===x)s+=2;if((c.tags||[]).indexOf(x)>-1)s+=3;});if(mode)s+=(c.mode||[]).indexOf(mode)>-1?2:-4;if(c.status==='open')s+=1;return {c:c,s:s};})
+    .filter(function(x){return x.s>1;}).sort(function(a,b){return b.s-a.s;}).slice(0,3).map(function(x){return x.c;});
+}
+function aiAnswer(list,lead){
+  if(!list.length){aiSay(t("Nothing fits those choices right now. Message us on WhatsApp and we'll help.",'مفيش كورس مناسب للاختيارات دي دلوقتي. كلمنا على واتساب ونساعدك.'));return;}
+  aiSay(lead+'<div style="display:flex;flex-direction:column;gap:8px;margin-top:10px">'+list.map(mini).join('')+'</div>');aiChips();
+}
+document.getElementById('aiForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  var sp=document.getElementById('aiSpec'),lv=document.getElementById('aiLevel'),md=document.getElementById('aiMode');
+  aiSay(esc(sp.options[sp.selectedIndex].text+' · '+lv.options[lv.selectedIndex].text+(md.value?' · '+md.options[md.selectedIndex].text:'')),true);
+  var tags=[sp.value];tags.push(lv.value==='beginner'?'beginner':(sp.value==='elec'?'lowcurrent':sp.value==='mech'?'hvac':'pricing'));
+  aiAnswer(recommend(tags,md.value),t('Courses that fit you:','الكورسات المناسبة ليك:'));
+});
+
+/* ---------- modals ---------- */
+function modal(html){document.getElementById('modalRoot').innerHTML='<div class="modal" id="mdl"><div class="modal-in" role="dialog" aria-modal="true"><button class="x" data-close-modal aria-label="Close">'+ic('i-x')+'</button>'+html+'</div></div>';}
+function loginModal(){
+  modal('<h3>'+t('Sign in','تسجيل الدخول')+'</h3><p class="muted" style="margin:8px 0 20px;font-size:15px">'+t('Track your registrations and the recorded courses you bought.','تابع طلبات التسجيل والكورسات المسجلة اللي اشتريتها.')+'</p>'+
+  '<button class="gbtn" id="gLogin"><span class="g">G</span>'+t('Continue with Google','الدخول بحساب Google')+'</button><div class="or">'+t('or','أو')+'</div>'+
+  '<form id="emLogin" style="display:flex;flex-direction:column;gap:12px"><label class="field">'+t('Email','البريد الإلكتروني')+'<input id="lgMail" type="email" required placeholder="name@example.com"></label><button class="btn btn-o" type="submit">'+t('Email me a sign-in link','ابعتلي رابط دخول')+'</button></form>'+
+  '<p class="muted" style="font-size:12.5px;margin-top:16px">'+t('Concept version: sign-in here is a demo.','نسخة تصورية: الدخول هنا تجريبي.')+'</p>');
+}
+function signIn(){user={name:t('Demo trainee','متدرب تجريبي')};try{localStorage.setItem('dk-user',JSON.stringify(user));}catch(_){}document.getElementById('modalRoot').innerHTML='';chrome();toast(t('Signed in (demo)','تم الدخول (تجريبي)'));}
+
+/* ---------- language switch ---------- */
+function applyLang(){var r=document.documentElement;r.lang=LANG;r.dir=LANG==='ar'?'rtl':'ltr';document.title=t('Dar Alkahrbaa Training Center','مركز دار الكهرباء للتدريب');}
+function setLang(l){LANG=l;try{localStorage.setItem('dk-lang',l);}catch(_){}var y=window.scrollY;applyLang();closeAll();chrome();route(true);window.scrollTo(0,y);}
+
+/* ---------- events ---------- */
+document.addEventListener('click',function(e){
+  if(e.target.id==='mdl'){document.getElementById('modalRoot').innerHTML='';return;}
+  if(e.target.classList&&e.target.classList.contains('drawer')){e.target.remove();return;}
+  var x=e.target.closest('button,a');if(!x)return;
+  if(x.id==='langBtn'||x.hasAttribute('data-lang')){setLang(LANG==='ar'?'en':'ar');var d0=document.querySelector('.drawer');if(d0)d0.remove();return;}
+  if(x.hasAttribute('data-open-wa')){e.preventDefault();openWa(x.getAttribute('data-open-wa'));return;}
+  if(x.id==='fabWa'){document.getElementById('popWa').hidden?openWa():closeAll();return;}
+  if(x.id==='fabAi'){document.getElementById('popAi').hidden?openAi():closeAll();return;}
+  if(x.hasAttribute('data-close')){document.getElementById(x.getAttribute('data-close')).hidden=true;return;}
+  if(x.hasAttribute('data-close-modal')){document.getElementById('modalRoot').innerHTML='';return;}
+  if(x.hasAttribute('data-scroll')){e.preventDefault();var el=document.getElementById(x.getAttribute('data-scroll'));if(el)el.scrollIntoView({behavior:'smooth',block:'start'});return;}
+  if(x.hasAttribute('data-photo')){var cap=x.getAttribute('data-cap')||'';document.getElementById('modalRoot').innerHTML='<div class="modal lb" id="mdl"><figure><img src="'+esc(x.getAttribute('data-photo'))+'" alt="'+esc(cap)+'">'+(cap?'<figcaption>'+esc(cap)+'</figcaption>':'')+'</figure><button class="x lbx" data-close-modal aria-label="Close">'+ic('i-x')+'</button></div>';return;}
+  if(x.hasAttribute('data-wa-topic')){document.getElementById('waGo').href=waLink(hello()+x.getAttribute('data-wa-topic'));document.querySelectorAll('[data-wa-topic]').forEach(function(b){b.classList.toggle('on',b===x);});return;}
+  if(x.hasAttribute('data-ai')){var p=S.settings.aiPresets.filter(function(q){return q.id===x.getAttribute('data-ai');})[0];if(!p)return;x.parentNode.remove();aiSay(esc(L(p,'q')),true);aiAnswer(recommend(p.tags,p.tags.indexOf('recorded')>-1?'فيديوهات مسجلة':''),p.tags.indexOf('next')>-1?t('The next dates:','أقرب المواعيد:'):t('These fit:','الكورسات المناسبة:'));return;}
+  if(x.id==='login'){loginModal();return;}
+  if(x.id==='logout'){user=null;try{localStorage.removeItem('dk-user');}catch(_){}chrome();toast(t('Signed out','تم تسجيل الخروج'));return;}
+  if(x.id==='gLogin'){signIn();return;}
+  if(x.id==='burger'){var d=document.createElement('div');d.className='drawer';d.innerHTML='<div class="drawer-in"><a href="#home" style="border:0"><img src="assets/logo-sm.png" alt="Dar Alkahrbaa" style="height:64px;width:auto"></a><a href="#home">'+t('Home','الرئيسية')+'</a>'+navLinks()+'<button class="btn btn-o" style="margin-top:16px" data-lang>'+ic('i-globe')+t('عربي','English')+'</button><button class="btn btn-wa" style="margin-top:10px" data-open-wa>'+waIcon()+'WhatsApp</button></div>';document.body.appendChild(d);return;}
+  if(x.parentNode&&x.parentNode.id==='catPills'){F.cat=x.getAttribute('data-v');history.replaceState(null,'','#courses'+(F.cat==='all'?'':'-'+F.cat));var h1=document.getElementById('cTitle');if(h1)h1.textContent=F.cat==='all'?t('All courses','كل الكورسات'):L(cat(F.cat),'name');renderGrid();return;}
+});
+document.addEventListener('change',function(e){if(e.target.id==='fKind'){F.kind=e.target.value;renderGrid();}if(e.target.id==='fMode'){F.mode=e.target.value;renderGrid();}});
+document.addEventListener('input',function(e){if(e.target.id==='q'){F.q=e.target.value.trim();renderGrid();}});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeAll();var d=document.querySelector('.drawer');if(d)d.remove();}});
+document.addEventListener('submit',function(e){
+  var f=e.target;
+  if(f.id==='emLogin'){e.preventDefault();signIn();return;}
+  if(f.classList.contains('reg')){
+    e.preventDefault();
+    var lead={id:DK.uid('l'),name:f.querySelector('#rgName').value.trim(),phone:f.querySelector('#rgPhone').value.trim(),course:f.querySelector('#rgCourse').value,mode:f.querySelector('#rgMode').value,date:new Date().toISOString().slice(0,10),status:'new',note:f.querySelector('#rgNote').value.trim()};
+    S=DK.load();norm();S.leads.unshift(lead);DK.save(S);
+    var c=course(lead.course);
+    f.querySelector('.rg-ok').innerHTML='<div class="ok-msg">'+ic('i-check')+'<span>'+t("We got your request for <b>"+esc(c?L(c,'title'):'')+"</b>. We'll message you on WhatsApp within 24 hours.",'وصلنا طلبك في <b>'+esc(c?c.title:'')+'</b>. هنكلمك على واتساب خلال 24 ساعة.')+'</span></div>';
+    f.querySelector('button[type=submit]').disabled=true;
+  }
+});
+window.addEventListener('storage',function(e){if(e.key===DK.KEY){S=DK.load();norm();chrome();route(true);}});
+
+/* ---------- motion: entrance, scroll reveal, count-up ---------- */
+function splitWords(el){
+  if(el.getAttribute('data-split'))return;el.setAttribute('data-split','1');
+  (function walk(node){[].slice.call(node.childNodes).forEach(function(c){
+    if(c.nodeType===3){var parts=c.textContent.split(/(\s+)/),f=document.createDocumentFragment();
+      parts.forEach(function(p){if(!p)return;if(/^\s+$/.test(p)){f.appendChild(document.createTextNode(p));return;}var w=document.createElement('span');w.className='w';var i=document.createElement('span');i.textContent=p;w.appendChild(i);f.appendChild(w);});
+      node.replaceChild(f,c);}
+    else if(c.nodeType===1&&c.tagName!=='BR')walk(c);});})(el);
+  [].forEach.call(el.querySelectorAll('.w>span'),function(s,i){s.style.transitionDelay=Math.min(i,14)*45+'ms';});
+}
+/* hero headline: typed word-by-word with a gold caret, after the intro lifts */
+function typeHero(){
+  var el=VIEW.querySelector('.hero h1');if(!el)return;
+  splitWords(el);
+  var spans=[].slice.call(el.querySelectorAll('.w>span'));if(!spans.length)return;
+  spans.forEach(function(s){s.style.transition='opacity .16s ease';s.style.transform='none';s.style.transitionDelay='0ms';s.style.opacity='0';});
+  var caret=document.createElement('span');caret.className='caret';el.appendChild(caret);
+  var started=false;
+  function run(){if(started||!document.body.contains(el))return;started=true;var i=0;
+    (function step(){if(!document.body.contains(el))return;if(i<spans.length){spans[i].style.opacity='1';i++;setTimeout(step,100);}})();}
+  var intro=document.getElementById('intro');
+  if(intro&&!intro.classList.contains('done')){window.addEventListener('dk-intro-done',run,{once:true});setTimeout(run,5200);}
+  else{setTimeout(run,160);}
+}
+/* hero rotating typewriter (loops through the tracks, like a BD-style hero) */
+function typeLoop(el,ph){
+  var i=0,j=0,del=false;
+  (function tick(){
+    if(!document.body.contains(el))return;
+    var p=ph[i%ph.length];
+    j=del?j-1:j+1;el.textContent=p.slice(0,Math.max(0,j));
+    var d=del?45:95;
+    if(!del&&j>=p.length){del=true;d=1400;}
+    else if(del&&j<=0){del=false;i++;d=320;}
+    setTimeout(tick,d);
+  })();
+}
+function heroRotate(){
+  var el=document.getElementById('heroRot');if(!el)return;
+  var ph=LANG==='ar'?['تصميم الكهرباء','التيار الخفيف','التسعير والتنفيذ','الميكانيكا و HVAC','الشوب دروينج']:['Electrical design','Low current systems','Pricing & execution','Mechanical & HVAC','Shop drawings'];
+  var reduce=false;try{reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;}catch(e){}
+  if(reduce){el.textContent=ph[0];return;}
+  typeLoop(el,ph);
+}
+function motion(skipReveal){
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(!en.isIntersecting)return;io.unobserve(en.target);var el=en.target;
+    if(el.classList.contains('sw')||el.classList.contains('rvz')){el.classList.add('in');}
+    if(el.classList.contains('rv')){var sib=[].indexOf.call(el.parentNode.children,el);el.style.transitionDelay=Math.min(sib,5)*70+'ms';el.classList.remove('pre');setTimeout(function(){el.style.transitionDelay='';},1200);}
+    if(el.hasAttribute('data-count')){var to=+el.getAttribute('data-count'),suf=el.getAttribute('data-suf')||'',t0=performance.now();(function tick(tm){var p=Math.min(1,(tm-t0)/1300),v=Math.round(to*(1-Math.pow(1-p,3)));el.textContent=n(v)+suf;if(p<1)requestAnimationFrame(tick);})(t0);}
+  });},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  if(skipReveal)return;
+  var vh=window.innerHeight;
+  typeHero();
+  VIEW.querySelectorAll('.head h2,.ws h2,.phead h1,.cd h1').forEach(function(el){splitWords(el);el.classList.add('sw');
+    if(el.getBoundingClientRect().top<vh*0.95){setTimeout(function(){el.classList.add('in');},60);}else io.observe(el);});
+  var bn=VIEW.querySelector('.bn');if(bn){if(bn.getBoundingClientRect().top<vh*0.95)bn.classList.add('in');else{bn.classList.add('rvz');io.observe(bn);}}
+  VIEW.querySelectorAll('.head p,.cat,.card,.rc,.rev,.nums>div,.why>div,.tbl-wrap,.qa,.mods,.box,.person,.ws-list li,.gal .ph,.ws-photos .ph').forEach(function(el){
+    el.classList.add('rv');if(el.getBoundingClientRect().top>vh*0.92){el.classList.add('pre');io.observe(el);}
+  });
+  VIEW.querySelectorAll('[data-count]').forEach(function(el){if(el.getBoundingClientRect().top>vh*0.92)io.observe(el);});
+}
+var hdr=document.querySelector('.hdr');window.addEventListener('scroll',function(){hdr.classList.toggle('scrolled',scrollY>8);},{passive:true});
+
+applyLang();chrome();route();
+})();
+</script>
